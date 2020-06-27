@@ -1,22 +1,4 @@
-# menu.black-2020
+# proportional.design
+> A collection of black owned restuarants in Atlanta.
 
-> A collection of black owned restuarants in Atlanta
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm run install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+![Menu.Black Design Interface](https://github.com/ohiosveryown/menu.black-2020/blob/master/static/img/art.jpg)
