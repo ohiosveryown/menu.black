@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hello World</h1>
+    <h1>Hello World Test</h1>
     <input type="text" v-model="search" placeholder="Input value here...">
 
     <div v-for="blog in filteredBlogs">
