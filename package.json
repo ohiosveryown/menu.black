@@ -12,8 +12,9 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
+    "node-sass": "^4.14.1",
     "nuxt": "^2.0.0",
-    "vue-fuse": "^2.2.1"
+    "sass-loader": "^8.0.2"
   },
   "devDependencies": {}
 }
