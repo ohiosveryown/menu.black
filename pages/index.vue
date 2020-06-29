@@ -1,61 +1,68 @@
 <template>
   <div>
-    <h1>Hello World Test</h1>
-    <input type="text" v-model="search" placeholder="Input value here...">
 
-    <div v-for="blog in filteredBlogs">
-      <!-- <h6>{{ blog.tag }}</h6> -->
-      <h2>{{ blog.title }}</h2>
-      <p>{{ blog.body }}</p>
+    <div class="random"></div>
+
+    <div id="users">
+
+      <input class="search" placeholder="Search" />
+      <button class="sort" data-sort="location">
+        Sort By Location
+      </button>
+
+      <ul class="list"></ul>
+
     </div>
+
   </div>
 </template>
 
-
-<style lang="scss" scoped>
-
-</style>
-
-
 <script>
   export default {
-    data() {
-      return {
-        blogs: [
-          {
-            "userId": 1,
-            "id": 1,
-            "tag": "pizza",
-            "location": "east atlanta",
-            "title": "Sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-            "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-          },
-          {
-            "userId": 1,
-            "id": 2,
-            "tag": "bbq",
-            "location": "kirkwood",
-            "title": "qui est esse",
-            "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-          },
-        ],
-        search: ''
-      }
-    },
+    mounted() {
+      var options = {
+        valueNames: [ 'location', 'name', 'born' ],
+        // Since there are no elements in the list, this will be used as template.
+        item:
+          `<li>
+            <h6 class="location"></h6>
+            <h3 class="name"></h3>
+            <p class="born"></p>
+          </li>`
+      };
 
-    created() {
-      // this.$http.get('https://jsonplaceholder.typicode.com/posts').then(function(data){
-      //   this.blogs = data.body.slice(0,10)
-      // })
-    },
-    computed: {
-      filteredBlogs: function() {
-        return this.blogs.filter((blog) => {
-          return blog.title.toLowerCase().match(this.search.toLowerCase()) ||
-          blog.tag.toLowerCase().match(this.search.toLowerCase()) ||
-          blog.location.toLowerCase().match(this.search.toLowerCase())
-        })
-      }
+      var values = [
+        {
+          location: 'East Atlanta',
+          name: 'Jonny Strömberg',
+          born: 1986
+        },
+        {
+          location: 'Decatur',
+          name: 'Jonas Arnklint',
+          born: 1985
+        },
+        {
+          location: 'Downtown',
+          name: 'Martina Elm',
+          born: 1986
+        }
+      ];
+
+      var userList = new List('users', options, values);
+
+      userList.add({
+        location: 'Midtown',
+        name: 'Gustaf Lindqvist',
+        born: 1983
+      })
+
+      let result = values.slice(0, 3).map(function () {
+          return this.splice(Math.floor(Math.random() * this.length), 1)[0]
+      }, values.slice())
+
+      let random = document.querySelector('.random')
+      random.innerText = result[0].name + ' / ' + result[1].name
     }
   }
 </script>
