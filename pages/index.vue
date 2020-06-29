@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <div class="random"></div>
+    <div class="f--usb random"></div>
 
     <div id="users">
 
@@ -10,7 +10,7 @@
         Sort By Location
       </button>
 
-      <ul class="list"></ul>
+      <ul class="f--us list"></ul>
 
     </div>
 
@@ -25,7 +25,7 @@
         // Since there are no elements in the list, this will be used as template.
         item:
           `<li>
-            <h6 class="location"></h6>
+            <h6 class="f--nmb location"></h6>
             <h3 class="name"></h3>
             <p class="born"></p>
           </li>`

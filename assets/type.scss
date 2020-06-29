@@ -1,16 +1,24 @@
 @import '~/assets/grid.scss';
 
-// @font-face {
-//   font-family: 'Respira';
-//   src: url('../static/type/Respira.woff2') format("woff2");
-// }
+@font-face {
+  font-family: "untitled-sans-bold";
+  src: url("../static/fonts/untitled-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Canela';
-//   src: url('../static/type/Canela.woff2') format("woff2");
-// }
+@font-face {
+  font-family: "untitled-sans-regular";
+  src: url("../static/fonts/untitled-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
 
-// @font-face {
-//   font-family: 'Steinbeck';
-//   src: url('../static/type/Steinbeck.woff2') format("woff2");
-// }
+@font-face {
+  font-family: "neue-montreal-bold";
+  src: url("../static/fonts/neue-montreal-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+.f--nmb { font-family: 'neue-montreal-bold', var(--system-ui); }
+.f--usb { font-family: 'untitled-sans-bold', var(--system-ui); }
+.f--us  { font-family: 'untitled-sans-regular', var(--system-ui); }
