@@ -1,65 +1,54 @@
 <template>
   <div>
 
-    <div class="f--usb random"></div>
+    <div class="random mb-6 f--usb"/>
 
-    <div id="users">
-
+    <div id="items">
       <input class="search" placeholder="Search" />
-      <button class="sort" data-sort="location">
-        Sort By Location
-      </button>
-
+      <button class="sort" data-sort="neighborhood">Sort By Location</button>
       <ul class="f--us list"></ul>
-
     </div>
 
   </div>
 </template>
 
 <script>
+  import { items } from '../static/items'
+
   export default {
     mounted() {
-      var options = {
-        valueNames: [ 'location', 'name', 'born' ],
-        // Since there are no elements in the list, this will be used as template.
+      const options = {
+        valueNames: [
+          'name',
+          'type',
+          'neighborhood',
+          'address',
+          'link'
+        ],
+
         item:
           `<li>
-            <h6 class="f--nmb location"></h6>
-            <h3 class="name"></h3>
-            <p class="born"></p>
+            <h1 class="name"/>
+            <h2 class="type"/>
+            <h3 class="neighborhood"/>
+            <h4 class="address"/>
+            <h5 class="link"/>
           </li>`
-      };
+      }
 
-      var values = [
-        {
-          location: 'East Atlanta',
-          name: 'Jonny Strömberg',
-          born: 1986
-        },
-        {
-          location: 'Decatur',
-          name: 'Jonas Arnklint',
-          born: 1985
-        },
-        {
-          location: 'Downtown',
-          name: 'Martina Elm',
-          born: 1986
-        }
-      ];
+      const itemList = new List('items', options, items)
 
-      var userList = new List('users', options, values);
-
-      userList.add({
-        location: 'Midtown',
-        name: 'Gustaf Lindqvist',
-        born: 1983
+      itemList.add({
+        name: "9 Mile Station",
+        type: 'American',
+        neighborhood: 'Virginia Highlands',
+        address: '600 Ponce de Leon Ave.',
+        link: '9mile.com',
       })
 
-      let result = values.slice(0, 3).map(function () {
+      let result = items.slice(0, 3).map(function () {
           return this.splice(Math.floor(Math.random() * this.length), 1)[0]
-      }, values.slice())
+      }, items.slice())
 
       let random = document.querySelector('.random')
       random.innerText = result[0].name + ' / ' + result[1].name

@@ -17,8 +17,7 @@
   --zmin: -9999;
 //
   --gravity: #202023;
-  --infrared: #FB4348;
-  --aqua: #0DF2F2;
+  --kale: #97B99E;
   --stone: #F2F2F2;
 }
 
@@ -34,7 +33,7 @@ html {
 body {
   // overflow: hidden;
   // height: 100vh;
-  background: var(--stone);
+  background: var(--kale);
   color: var(--gravity);
   font: normal 1.6rem/1.4 var(--system-ui);
   overflow-x: hidden;
