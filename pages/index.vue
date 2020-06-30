@@ -1,57 +1,65 @@
 <template>
   <div>
-
-    <div class="random mb-6 f--usb"/>
-
-    <div id="items">
-      <input class="search" placeholder="Search" />
-      <button class="sort" data-sort="neighborhood">Sort By Location</button>
-      <ul class="f--us list"></ul>
-    </div>
-
+    <Navigation/>
+    <Businesses/>
+    <Discover/>
   </div>
 </template>
 
+
+<style lang="scss" scoped>
+  @import '../style/grid.scss';
+
+
+
+</style>
+
+
 <script>
+  import Navigation from '../components/Navigation'
+  import Businesses from '../components/Businesses'
+  import Discover from '../components/Discover'
   import { items } from '../static/items'
 
   export default {
+    components: { Navigation, Businesses, Discover },
     mounted() {
-      const options = {
-        valueNames: [
-          'name',
-          'type',
-          'neighborhood',
-          'address',
-          'link'
-        ],
+      // const options = {
+      //   valueNames: [
+      //     'name',
+      //     'type',
+      //     'neighborhood',
+      //     'address',
+      //     'link'
+      //   ],
 
-        item:
-          `<li>
-            <h1 class="name"/>
-            <h2 class="type"/>
-            <h3 class="neighborhood"/>
-            <h4 class="address"/>
-            <h5 class="link"/>
-          </li>`
-      }
+      //   item:
+      //     `<li>
+      //       <h1 class="name"/>
+      //       <h2 class="type"/>
+      //       <h3 class="neighborhood"/>
+      //       <h4 class="address"/>
+      //       <h5 class="link"/>
+      //     </li>`
+      // }
 
-      const itemList = new List('items', options, items)
+      // const itemList = new List('items', options, items)
 
-      itemList.add({
-        name: "9 Mile Station",
-        type: 'American',
-        neighborhood: 'Virginia Highlands',
-        address: '600 Ponce de Leon Ave.',
-        link: '9mile.com',
-      })
+      // itemList.add({
+      //   name: "9 Mile Station",
+      //   type: 'American',
+      //   neighborhood: 'Virginia Highlands',
+      //   address: '600 Ponce de Leon Ave.',
+      //   link: '9mile.com',
+      // })
 
-      let result = items.slice(0, 3).map(function () {
-          return this.splice(Math.floor(Math.random() * this.length), 1)[0]
-      }, items.slice())
+      // // discover
+      // let result = items.slice(0, 3).map(function () {
+      //     return this.splice(Math.floor(Math.random() * this.length), 1)[0]
+      // }, items.slice())
 
-      let random = document.querySelector('.random')
-      random.innerText = result[0].name + ' / ' + result[1].name
+      // let random = document.querySelector('.random')
+      // random.innerText = result[0].name + ' / ' + result[1].name
     }
   }
 </script>

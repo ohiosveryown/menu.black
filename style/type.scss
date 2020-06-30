@@ -1,0 +1,38 @@
+@import '~/style/grid.scss';
+
+@font-face {
+  font-family: "untitled-sans-bold";
+  src: url("../static/fonts/untitled-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "untitled-sans-regular";
+  src: url("../static/fonts/untitled-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "neue-montreal-bold";
+  src: url("../static/fonts/neue-montreal-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+ p { line-height: 1.6; }
+
+
+.f--nmb { font-family: 'neue-montreal-bold', var(--system-ui); }
+.f--usb { font-family: 'untitled-sans-bold', var(--system-ui); }
+.f--us  { font-family: 'untitled-sans-regular', var(--system-ui); }
+
+.fs-lg {
+  line-height: 1;
+  @include breakpoint(md) { font-size: 4.6rem; }
+}
+
+.fs--sm { font-size: 1.3rem; }
+
+
+.uc { text-transform: uppercase; background: pink; }
+.tac { text-align: center; }
+.tar { text-align: right; }
