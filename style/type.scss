@@ -30,6 +30,12 @@
   @include breakpoint(md) { font-size: 3.2vw; }
 }
 
+.fs-md {
+  font-size: 2rem;
+  line-height: 1.1;
+  @include breakpoint(md) { font-size: 2.8vw; }
+}
+
 .fs--sm { font-size: 1.3rem; }
 
 

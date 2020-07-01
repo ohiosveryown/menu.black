@@ -6,7 +6,7 @@
       <h1 class="mb-2 fs-lg f--nmb">Restaurants in Atlanta</h1>
 
       <article>
-        <p class="f--us">menu.black is a growing collection of black-owned food spots in Atlanta. Don’t see a business in our collection that should be added? <span class="link">Contact us</span> and we’ll add them to the list.</p>
+        <p class="f--us">menu.black is a growing collection of black-owned food spots in Atlanta. Don’t see a business in the collection that should be added? <span class="link">Contact us</span> and we’ll add them to the list.</p>
       </article>
 
       <img class="veggie-01" src="../static/img/veggies/veggies-01.png" alt="broccoli illustration">
@@ -181,55 +181,5 @@
 
 
 <script>
-  import { items } from '../static/items'
-
-  export default {
-    mounted() {
-      const options = {
-        valueNames: [
-          'name',
-          'type',
-          'neighborhood',
-          'address',
-          'link',
-          { attr: 'src', name: 'image'},
-          { name: 'url', attr: 'href' },
-        ],
-
-        item:
-          `<li class="item">
-            <img class="image">
-            <div class="meta">
-              <h2 class="type"></h3>
-              <h3 class="neighborhood"></h3>
-            </div>
-            <div class="info">
-              <h1 class="name"></h1>
-              <a target="_blank" class="link url"></a>
-            </div>
-            <h4 class="address"></h4>
-          </li>`
-      }
-
-      const itemList = new List('items', options, items)
-
-      itemList.add({
-        name: "9 Mile Station",
-        type: 'American',
-        neighborhood: 'Virginia Highlands',
-        address: '600 Ponce de Leon Ave.',
-        url: 'https://ovo.pink',
-        link: 'menu / order',
-        image: 'https://res.cloudinary.com/simpleview/image/upload/w_485,h_300,c_fill/crm/atlanta/ca16644d-d3f5-4b7d-8a46-4f39648a0170_88a3b463-5056-a36a-0a7f9c55f05d22a1.png',
-      })
-
-      // // discover
-      // let result = items.slice(0, 3).map(function () {
-      //     return this.splice(Math.floor(Math.random() * this.length), 1)[0]
-      // }, items.slice())
-
-      // let random = document.querySelector('.random')
-      // random.innerText = result[0].name + ' / ' + result[1].name
-    }
-  }
+  export default { }
 </script>

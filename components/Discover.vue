@@ -1,11 +1,41 @@
 <template>
   <aside>
 
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <header>
+      <h2 class="mb-1 fs-md f--nmb">Discover Something New</h2>
+      <p class="f--us">Feeling adventourous? Random spot are shown below – <span class="link refresh">refresh the list</span> or browse more directly in the section to the left.</p>
+      <img class="veggie-01" src="../static/img/veggies/veggies-05.png" alt="asparagus illustration">
+    </header>
+
+    <ul>
+      <li class="discover">
+        <figure class="one-img"/>
+        <h1 class="one-name f--nmb"/>
+        <h2 class="one-type f--us"/>
+        <div class="one-link f--usb uc"/>
+      </li>
+
+      <li class="discover">
+        <figure class="two-img"/>
+        <h1 class="two-name f--nmb"/>
+        <h2 class="two-type f--us"/>
+        <div class="two-link f--usb uc"/>
+      </li>
+
+      <li class="discover">
+        <figure class="three-img"/>
+        <h1 class="three-name f--nmb"/>
+        <h2 class="three-type f--us"/>
+        <div class="three-link f--usb uc"/>
+      </li>
+
+      <li class="discover">
+        <figure class="four-img"/>
+        <h1 class="four-name f--nmb"/>
+        <h2 class="four-type f--us"/>
+        <div class="four-link f--usb uc"/>
+      </li>
+    </ul>
 
   </aside>
 </template>
@@ -18,26 +48,55 @@
     display: none;
     position: fixed;
     z-index: var(--z1);
-    align-items: center;
-    top: 6.4rem; right: 0;
+    top: 0; right: 0;
     padding: 0 0 0 5.6rem;
-    width: calc(50% - 5.6rem); height: calc(100% - 6.6rem);
+    width: calc(50% - 5.6rem); height: 100%;
     overflow-x: scroll;
 
     @include breakpoint(mdl) {
       display: flex;
+      flex-direction: column;
       // width: calc(50% - 5.6rem); height: calc(100% - 6.6rem);
     }
   }
 
-  aside > * {
-    flex: none;
-    margin-left: 5.6rem;
-    width: 60%; height: 40%;
-    background: pink;
+  header {
+    position: sticky;
+    z-index: var(--z4);
+    top: 11.6rem; left: 0;
+    p { margin-right: 1.6rem; max-width: 48ch; }
   }
 
-  aside > *:last-of-type { background: red; }
+  .veggie-01 {
+    position: absolute;
+    z-index: var(--zmin);
+    top: 4rem; left: 88%;
+    width: 5.6vw; height: auto;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%; height: 100%;
+  }
+
+  li {
+    position: relative;
+    z-index: var(--z4);
+    flex: none;
+    margin: 11.2rem 5.6rem 0 0;
+    width: 32%; height: 64%;
+  }
+
+  figure {
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+    width: auto; height: 64%;
+    overflow: hidden;
+  }
+
+  // aside > *:last-of-type { background: red; }
 
 
 </style>
