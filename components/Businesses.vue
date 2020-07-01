@@ -29,8 +29,9 @@
           <div class="tools--sort-label">
             <small class="f--us fs--sm uc">...or sort by location or food type</small>
           </div>
+          <img class="veggie-03" src="../static/img/veggies/veggies-03.png" alt="mangos illustration">
         </div>
-        <img class="veggie-02" src="../static/img/veggies/veggies-02.png" alt="mango illustration">
+        <img class="veggie-02" src="../static/img/veggies/veggies-02.png" alt="pepers illustration">
       </div>
 
       <!-- results -->
@@ -75,8 +76,16 @@
   .veggie-02 {
     position: absolute;
     z-index: var(--zmin);
-    top: 0rem; left: -3.6rem;
+    top: 0; left: -3.6rem;
     width: 4rem; height: auto;
+  }
+
+  .veggie-03 {
+    position: absolute;
+    z-index: var(--zmin);
+    bottom: 0rem; right: -2rem;
+    width: 4rem; height: auto;
+    @include breakpoint(lg) { display: none; }
   }
 
   .items {
@@ -110,13 +119,22 @@
     }
   }
 
+  .tools--sort {
+    position: relative;
+  }
+
   .tools--sort-btns {
     display: flex;
     justify-content: space-between;
-    button { margin-left: .8rem; flex-grow: 1; }
+    button { flex-grow: 1; }
+    button:first-of-type {
+      margin-right: .6rem;
+      @include breakpoint(lg) { margin-right: 0; margin-left: .8rem; }
+    }
+
     button:last-of-type {
-      // display: none;
-      @include breakpoint(lg) { display: flex; }
+      margin-left: .6rem;
+      @include breakpoint(lg) { margin-left: 0; margin-left: .8rem; }
     }
   }
 
