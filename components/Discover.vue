@@ -15,7 +15,7 @@
   @import '../style/grid.scss';
 
   aside {
-    display: flex;
+    display: none;
     position: fixed;
     z-index: var(--z1);
     align-items: center;
@@ -24,7 +24,8 @@
     width: calc(50% - 5.6rem); height: calc(100% - 6.6rem);
     overflow-x: scroll;
 
-    @include breakpoint(md) {
+    @include breakpoint(mdl) {
+      display: flex;
       // width: calc(50% - 5.6rem); height: calc(100% - 6.6rem);
     }
   }

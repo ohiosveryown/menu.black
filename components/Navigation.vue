@@ -12,6 +12,8 @@
 
 
 <style lang="scss" scoped>
+  @import '../style/grid.scss';
+
   nav {
     position: fixed;
     z-index: var(--z3);
@@ -31,7 +33,11 @@
     display: flex;
     position: relative;
     margin: 0 auto;
-    width: calc(100% -  11.2rem);
+    width: calc(100% - 6.4rem);
+
+    @include breakpoint(md) {
+      width: calc(100% -  11.2rem);
+    }
   }
 
   li {

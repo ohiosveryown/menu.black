@@ -151,8 +151,10 @@
   .image {
     margin-bottom: 1.4rem;
     border-radius: 8px;
-    width: 100%; height: 36vh;
+    width: 100%; height: 24vh;
     object-fit: cover;
+
+    @include breakpoint(md) { height: 36vh; }
   }
 
   .meta {

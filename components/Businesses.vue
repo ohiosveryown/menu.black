@@ -43,15 +43,21 @@
 
 <style lang="scss" scoped>
   @import '../style/grid.scss';
-  @import '../style/type.scss';
 
   .wrapper {
     position: relative;
     z-index: var(--z2);
-    padding-top: 11.2rem;
-    padding: 11.2rem 5.6rem 5.6rem;
-    width: calc(50% - 11.2rem); min-height: 100vh;
-    border-right: 1px solid var(--gravity);
+    padding: 11.2rem 3.2rem 5.6rem;
+    width: calc(100% - 6.4rem); min-height: 100vh;
+
+    @include breakpoint(md) {
+      width: calc(50% - 11.2rem);
+      padding: 11.2rem 5.6rem 5.6rem;
+     }
+
+    @include breakpoint(mdl) {
+      border-right: 1px solid var(--gravity);
+    }
   }
 
   header {
@@ -80,8 +86,10 @@
 
   .tools {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     position: relative;
+    @include breakpoint(lg) { flex-direction: row; }
   }
 
   .tools--search {
@@ -89,8 +97,10 @@
     flex: 1;
     flex-direction: column;
     position: relative;
-    // width: 40%;
+    margin-bottom: 2rem;
     text-transform: uppercase;
+
+    @include breakpoint(lg) { margin-bottom: 0; }
 
     svg {
       position: absolute;
@@ -102,13 +112,17 @@
   .tools--sort-btns {
     display: flex;
     justify-content: space-between;
-    button { margin-left: .8rem; width: 50%; }
+    button { margin-left: .8rem; flex-grow: 1; }
+    button:last-of-type {
+      // display: none;
+      @include breakpoint(lg) { display: flex; }
+    }
   }
 
   input {
     margin-bottom: .76rem;
     padding: 1.6rem 1.6rem;
-    max-width: 48rem;
+    // max-width: 48rem;
     border: 1px solid var(--gravity);
     border-radius: 0;
     background: var(--kale);
