@@ -59,6 +59,7 @@
 .content-width { width: max-content; }
 
 .link {
+  cursor: pointer;
   text-decoration: underline;
   &:hover { text-decoration: none; }
 }

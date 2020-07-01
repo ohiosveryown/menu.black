@@ -57,7 +57,7 @@ video, img { display: block; max-width: 100%; height: auto; }
 img        { vertical-align: top; }
 ul         { list-style-type: none; -webkit-margin-before: 0; -webkit-margin-after: 0; }
 
-// :focus     { outline: 0; }
+:focus     { outline: 1px solid #fff; }
 
 
 input {

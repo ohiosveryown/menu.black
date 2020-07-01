@@ -18,6 +18,7 @@
 //
   --gravity: #202023;
   --kale: #97B99E;
+  --darkkale: #73987A;
   --stone: #F2F2F2;
 }
 
@@ -35,7 +36,7 @@ body {
   // height: 100vh;
   background: var(--kale);
   color: var(--gravity);
-  font: normal 1.6rem/1.4 var(--system-ui);
+  font: normal 1.8rem/1.4 var(--system-ui);
   overflow-x: hidden;
 }
 
