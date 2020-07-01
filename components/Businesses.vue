@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
 
-    <header>
+    <header class="mb-5">
       <h1 class="fs-lg f--nmb">Black Owned</h1>
       <h1 class="mb-2 fs-lg f--nmb">Restaurants in Atlanta</h1>
 
@@ -13,9 +13,26 @@
     </header>
 
     <section id="items" class="items">
-      <div class="tools">
-        <input class="search" placeholder="Search" />
+
+
+      <div class="tools mb-6">
+        <div class="tools--search f--us">
+          <input class="search" placeholder="Search" />
+          <small class="f--us fs--sm uc">Try by location (Kirkwood) or food type (Pizza)</small>
+        </div>
+        <div class="tools--sort">
+          <div class="tools--sort-btns">
+            <button class="sort" data-sort="neighborhood">By Location</button>
+            <button class="sort" data-sort="type">By Food Type</button>
+          </div>
+          <div class="tools--sort-label">
+            <small class="f--us fs--sm uc">...or sort by location or food type</small>
+          </div>
+        </div>
+        <img class="veggie-02" src="../static/img/veggies/veggies-02.png" alt="mango illustration">
       </div>
+
+      <!-- results -->
       <ul class="f--us list"></ul>
     </section>
 
@@ -47,19 +64,43 @@
     width: 12%; height: auto;
   }
 
+  .veggie-02 {
+    position: absolute;
+    z-index: var(--zmin);
+    top: 0rem; left: -3.6rem;
+    width: 4rem; height: auto;
+  }
+
   .items {
     display: flex;
     flex-direction: column;
-    margin-top: 6.4rem;
     width: 100%;
   }
 
   .tools {
     display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .tools--search {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    // width: 40%;
+    text-transform: uppercase;
+  }
+
+  .tools--sort-btns {
+    display: flex;
+    justify-content: space-between;
+    button { margin-left: .8rem; width: 50%; }
   }
 
   input {
-    padding: 1.2rem 1.6rem;
+    margin-bottom: .9rem;
+    padding: 1.6rem 1.6rem;
+    max-width: 48rem;
     border: 1px solid var(--gravity);
     border-radius: 0;
     background: var(--kale);
@@ -70,8 +111,8 @@
 
   input:focus {
     outline: 0px solid var(--gravity);
-    // box-shadow: 0 4px 24px rgba(0, 0, 0, 0.24);
     background: var(--darkkale);
+    // box-shadow: 0 4px 24px rgba(0, 0, 0, 0.24);
   }
 
   ::placeholder {
@@ -80,6 +121,20 @@
     text-transform: uppercase;
   }
 
+  button {
+    margin: .2rem 0 .4rem;
+    padding: 1.6rem 1.2rem;
+    border: 1px solid var(--gravity);
+    background: var(--kale);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: var(--ease);
+  }
+
+  button:focus, button:hover {
+    outline: 0px solid var(--gravity);
+    background: var(--darkkale)
+  }
 
 </style>
 
