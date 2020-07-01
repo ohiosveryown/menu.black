@@ -2,9 +2,10 @@ const items = [
   {
     name: 'Just Add Honey',
     type: 'Coffee & Tea',
-    neighborhood: 'Inman Park',
-    address: '123 Fake Street',
-    link: 'addhoney.com',
+    neighborhood: 'Old Fourth Ward',
+    address: '209 Edgewood Ave NE, Atlanta, GA 30303',
+    url: 'https://www.google.com',
+    link: 'menu/order',
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/NyQbgXuQdCxCJ8z2QR9UjA/o.jpg',
   },
 
