@@ -17,6 +17,7 @@
 
       <div class="tools mb-6">
         <div class="tools--search f--us">
+          <svg width="24" height="24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.254 13.414a5.5 5.5 0 117.778-7.779 5.5 5.5 0 01-7.778 7.779zm-.34 1.047a6.5 6.5 0 10-.708-.707l-4.963 4.963.707.707 4.963-4.963z" fill="#000"/></svg>
           <input class="search" placeholder="Search" />
           <small class="f--us fs--sm uc">Try location (Kirkwood) or food type (Pizza)</small>
         </div>
@@ -87,8 +88,15 @@
     display: flex;
     flex: 1;
     flex-direction: column;
+    position: relative;
     // width: 40%;
     text-transform: uppercase;
+
+    svg {
+      position: absolute;
+      top: 1.6rem; right: 1.6rem;
+      z-index: 9999;
+    }
   }
 
   .tools--sort-btns {
@@ -98,7 +106,7 @@
   }
 
   input {
-    margin-bottom: .9rem;
+    margin-bottom: .76rem;
     padding: 1.6rem 1.6rem;
     max-width: 48rem;
     border: 1px solid var(--gravity);
