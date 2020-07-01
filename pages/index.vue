@@ -10,8 +10,6 @@
 <style lang="scss" scoped>
   @import '../style/grid.scss';
 
-
-
 </style>
 
 

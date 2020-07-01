@@ -18,7 +18,7 @@
       <div class="tools mb-6">
         <div class="tools--search f--us">
           <input class="search" placeholder="Search" />
-          <small class="f--us fs--sm uc">Try by location (Kirkwood) or food type (Pizza)</small>
+          <small class="f--us fs--sm uc">Try location (Kirkwood) or food type (Pizza)</small>
         </div>
         <div class="tools--sort">
           <div class="tools--sort-btns">
@@ -150,16 +150,20 @@
           'type',
           'neighborhood',
           'address',
-          'link'
+          'link',
+          { attr: 'src', name: 'image'}
         ],
 
         item:
-          `<li>
-            <h1 class="name"/>
-            <h2 class="type"/>
-            <h3 class="neighborhood"/>
-            <h4 class="address"/>
-            <h5 class="link"/>
+          `<li class="item">
+            <img class="image">
+            <div class="meta">
+              <h3 class="neighborhood"></h3>
+              <h2 class="type"></h3>
+            </div>
+            <h1 class="name"></h1>
+            <h4 class="address"></h4>
+            <h5 class="link"></h5>
           </li>`
       }
 
@@ -171,6 +175,7 @@
         neighborhood: 'Virginia Highlands',
         address: '600 Ponce de Leon Ave.',
         link: '9mile.com',
+        image: 'https://res.cloudinary.com/simpleview/image/upload/w_485,h_300,c_fill/crm/atlanta/ca16644d-d3f5-4b7d-8a46-4f39648a0170_88a3b463-5056-a36a-0a7f9c55f05d22a1.png',
       })
 
       // // discover
