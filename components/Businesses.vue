@@ -51,12 +51,13 @@
     width: calc(100% - 6.4rem); min-height: 100vh;
 
     @include breakpoint(md) {
-      width: calc(50% - 11.2rem);
       padding: 11.2rem 5.6rem 5.6rem;
+      width: calc(100% -  11.2rem);
      }
 
     @include breakpoint(mdl) {
       border-right: 1px solid var(--gravity);
+      width: calc(50% - 11.2rem);
     }
   }
 
