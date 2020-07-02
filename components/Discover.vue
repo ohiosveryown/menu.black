@@ -78,8 +78,18 @@
   .veggie-01 {
     position: absolute;
     z-index: var(--zmin);
-    top: 4rem; left: 88%;
-    width: 5.6vw; height: auto;
+    top: -2rem; left: 80%;
+    width: 3.2rem; height: auto;
+
+    @include breakpoint(lg) {
+      top: -1rem; left: 74%;
+      width: 2.8rem; height: auto;
+    }
+
+    @include breakpoint(xl) {
+      top: 4rem; left: 88%;
+      width: 5.6vw; height: auto;
+    }
   }
 
   ul {
