@@ -217,7 +217,12 @@
   a {
     font-size: 1.3rem;
     text-decoration: underline;
-    &:hover { text-decoration: none; }
+    // &:hover { text-decoration: none; }
+  }
+
+  /* non-touch styles */
+  @media (pointer: fine) {
+    a:hover { text-decoration: none; }
   }
 
   a:after {

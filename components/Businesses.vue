@@ -2,20 +2,20 @@
   <div class="wrapper">
 
     <header class="mb-5">
-      <h1 class="fs-lg f--nmb">Black Owned</h1>
-      <h1 class="mb-2 fs-lg f--nmb">Restaurants in Atlanta</h1>
+      <h1 class="anim--enter fs-lg f--nmb">Black Owned</h1>
+      <h1 class="anim--enter mb-2 fs-lg f--nmb">Restaurants in Atlanta</h1>
 
       <article>
-        <p class="f--us">menu.black is a growing collection of black-owned food spots in Atlanta. Don’t see a business in the collection that should be added? <span class="link">Contact us</span> and we’ll add them to the list.</p>
+        <p class="anim--enter f--us">menu.black is a growing collection of black-owned food spots in Atlanta. Don’t see a business in the collection that should be added? <span class="link">Contact us</span> and we’ll add them to the list.</p>
       </article>
 
-      <img class="veggie-01" src="../static/img/veggies/veggies-01.png" alt="broccoli illustration">
+      <img class="anim--enter veggie-01" src="../static/img/veggies/veggies-01.png" alt="broccoli illustration">
     </header>
 
     <section id="items" class="items">
 
 
-      <div class="tools mb-6">
+      <div class="anim--enter tools mb-6">
         <div class="tools--search f--us">
           <svg width="24" height="24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.254 13.414a5.5 5.5 0 117.778-7.779 5.5 5.5 0 01-7.778 7.779zm-.34 1.047a6.5 6.5 0 10-.708-.707l-4.963 4.963.707.707 4.963-4.963z" fill="#000"/></svg>
           <input class="search" placeholder="Search" />
@@ -35,7 +35,7 @@
       </div>
 
       <!-- results -->
-      <ul class="f--us list"></ul>
+      <ul class="anim--enter f--us list"></ul>
     </section>
 
   </div>
@@ -181,5 +181,18 @@
 
 
 <script>
-  export default { }
+  export default {
+    mounted() {
+      // // entrance
+      // gsap.from('.anim--enter', {
+      //   opacity: 0,
+      //   y: 112,
+      //   // skewY: 10,
+      //   stagger: .075,
+      //   duration: 1,
+      //   // delay: .64,
+      //   ease: Power2.easeInOut
+      // })
+    },
+  }
 </script>

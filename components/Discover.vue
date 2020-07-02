@@ -1,14 +1,14 @@
 <template>
   <aside>
 
-    <header>
+    <header class="anim--enter">
       <h2 class="mb-1 fs-md f--nmb">Discover Something New</h2>
       <p class="f--us">Feeling adventourous? Random spots are shown below – <span class="link refresh">refresh the list</span> or browse more directly in the section to the left.</p>
       <img class="veggie-01" src="../static/img/veggies/veggies-05.png" alt="asparagus illustration">
     </header>
 
     <ul>
-      <li class="discover">
+      <li class="anim--enter discover">
         <figure class="one-img"/>
         <div class="content">
           <h1 class="one-name f--nmb"/>
@@ -17,7 +17,7 @@
         </div>
       </li>
 
-      <li class="discover">
+      <li class="anim--enter discover">
         <figure class="two-img"/>
         <div class="content">
           <h1 class="two-name f--nmb"/>
@@ -26,7 +26,7 @@
         </div>
       </li>
 
-      <li class="discover">
+      <li class="anim--enter discover">
         <figure class="three-img"/>
         <div class="content">
           <h1 class="three-name f--nmb"/>
@@ -35,7 +35,7 @@
         </div>
       </li>
 
-      <li class="discover">
+      <li class="anim--enter discover">
         <figure class="four-img"/>
         <div class="content">
           <h1 class="four-name f--nmb"/>
@@ -125,6 +125,17 @@
 
 <script>
   export default {
-
+    mounted() {
+      // entrance
+      gsap.from('.anim--enter', {
+        opacity: 0,
+        y: 112,
+        // skewY: 10,
+        stagger: .075,
+        duration: 1,
+        delay: .64,
+        ease: Power2.easeInOut
+      })
+    },
   }
 </script>
