@@ -3,37 +3,45 @@
 
     <header>
       <h2 class="mb-1 fs-md f--nmb">Discover Something New</h2>
-      <p class="f--us">Feeling adventourous? Random spot are shown below – <span class="link refresh">refresh the list</span> or browse more directly in the section to the left.</p>
+      <p class="f--us">Feeling adventourous? Random spots are shown below – <span class="link refresh">refresh the list</span> or browse more directly in the section to the left.</p>
       <img class="veggie-01" src="../static/img/veggies/veggies-05.png" alt="asparagus illustration">
     </header>
 
     <ul>
       <li class="discover">
         <figure class="one-img"/>
-        <h1 class="one-name f--nmb"/>
-        <h2 class="one-type f--us"/>
-        <div class="one-link f--usb uc"/>
+        <div class="content">
+          <h1 class="one-name f--nmb"/>
+          <h2 class="one-type f--us"/>
+          <div class="one-link f--usb uc"/>
+        </div>
       </li>
 
       <li class="discover">
         <figure class="two-img"/>
-        <h1 class="two-name f--nmb"/>
-        <h2 class="two-type f--us"/>
-        <div class="two-link f--usb uc"/>
+        <div class="content">
+          <h1 class="two-name f--nmb"/>
+          <h2 class="two-type f--us"/>
+          <div class="two-link f--usb uc"/>
+        </div>
       </li>
 
       <li class="discover">
         <figure class="three-img"/>
-        <h1 class="three-name f--nmb"/>
-        <h2 class="three-type f--us"/>
-        <div class="three-link f--usb uc"/>
+        <div class="content">
+          <h1 class="three-name f--nmb"/>
+          <h2 class="three-type f--us"/>
+          <div class="three-link f--usb uc"/>
+        </div>
       </li>
 
       <li class="discover">
         <figure class="four-img"/>
-        <h1 class="four-name f--nmb"/>
-        <h2 class="four-type f--us"/>
-        <div class="four-link f--usb uc"/>
+        <div class="content">
+          <h1 class="four-name f--nmb"/>
+          <h2 class="four-type f--us"/>
+          <div class="four-link f--usb uc"/>
+        </div>
       </li>
     </ul>
 
@@ -82,6 +90,8 @@
   }
 
   li {
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: var(--z4);
     flex: none;
@@ -90,6 +100,7 @@
   }
 
   figure {
+    flex: 1;
     margin-bottom: 1.2rem;
     border-radius: 8px;
     width: auto; height: 64%;
