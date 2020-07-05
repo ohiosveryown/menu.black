@@ -175,6 +175,11 @@
     text-align: right;
   }
 
+  /* non-touch styles */
+  @media (pointer: fine) {
+    .link:hover { text-decoration: none; }
+  }
+
   .neighborhood { text-align: right; }
 
   .name {

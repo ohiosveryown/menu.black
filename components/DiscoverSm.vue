@@ -3,7 +3,7 @@
 
     <header class="anim--enter">
       <h2 class="mb-1 fs-md f--nmb">Discover Something New</h2>
-      <p class="f--us">Feeling adventourous? Random spots are shown below – <span class="link refresh">refresh the list</span> or browse more directly in the section to the left.</p>
+      <p class="f--us">Feeling adventourous? Random spots are shown here – <span class="link refresh">refresh the list</span> or browse more directly in the section below.</p>
     </header>
 
     <ul>
@@ -44,30 +44,40 @@
   @import '../style/grid.scss';
 
   aside {
-    // border: 1px solid red;
     margin-left: -3.2rem;
     width: calc(100% + 6.4rem);
     overflow-x: scroll;
-    @include breakpoint(mdl) { display: none; }
+
+    @include breakpoint(md) {
+      margin-left: -5.6rem;
+      width: calc(100% + 11.2rem);
+    }
+
+    @include breakpoint(mdl) {
+      display: none;
+    }
   }
 
   header {
     position: sticky;
     top: 0; left: 3.2rem;
     margin-left: 3.2rem;
+    @include breakpoint(md) { left: 5.6rem; }
   }
 
   ul {
     display: flex;
     align-items: stretch;
     margin: 3.2rem 0 3.2rem 3.2rem;
+    @include breakpoint(md) { margin: 3.2rem 0 8rem 5.6rem; }
   }
 
   li {
     display: flex;
     flex-direction: column;
     margin-right: 2rem;
-    flex: 0 0 12.4rem;
+    flex: 0 0 40%;
+    @include breakpoint(md) { margin-right: 4rem; }
   }
 
   figure {
