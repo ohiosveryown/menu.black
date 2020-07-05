@@ -184,9 +184,11 @@
 
   .name {
     margin-bottom: .6rem;
+    width: 64%;
     font-size: 3.2rem;
     line-height: 1.1;
     font-family: 'neue-montreal-bold', var(--system-ui);
+    @include breakpoint(lg) { width: inherit; }
   }
 
   .address {
