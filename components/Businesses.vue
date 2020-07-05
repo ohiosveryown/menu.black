@@ -16,7 +16,7 @@
     <!-- <DiscoverSm/> -->
 
     <section id="items" class="items">
-      <div class="anim--enter tools mb-6">
+      <div class="anim--enter tools mb-4">
         <div class="tools--search f--us">
           <svg width="24" height="24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.254 13.414a5.5 5.5 0 117.778-7.779 5.5 5.5 0 01-7.778 7.779zm-.34 1.047a6.5 6.5 0 10-.708-.707l-4.963 4.963.707.707 4.963-4.963z" fill="#000"/></svg>
           <input class="search" placeholder="Search" />
@@ -35,6 +35,13 @@
         <img class="veggie-02" src="../static/img/veggies/veggies-02.png" alt="pepers illustration">
       </div>
 
+      <!-- list header -->
+      <div class="anim--enter updated">
+        <h3 class="f--usb uc fs--sm">Restaurant list</h3>
+        <span/>
+        <div class="updated--date uc fs--sm">Updated: July, 2020</div>
+      </div>
+
       <!-- results -->
       <ul class="anim--enter f--us list"></ul>
     </section>
@@ -45,6 +52,20 @@
 
 <style lang="scss" scoped>
   @import '../style/grid.scss';
+
+  .updated {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.4rem 0;
+
+    span {
+      flex-grow: 1;
+      margin: 0 1.6rem ;
+      height: 1px;
+      background: #000;
+    }
+  }
 
   .wrapper {
     position: relative;
