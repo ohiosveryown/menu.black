@@ -65,16 +65,9 @@
           return this.splice(Math.floor(Math.random() * this.length), 1)[0]
       }, items.slice())
 
-
-
-      // let discoverOne = document.querySelector('.discover-one')
-      // discoverOne.innerText = result[0].name + result[0].address
-
       // discover - one
       let imgOne = document.querySelector('.one-img')
-      imgOne.innerHTML = `
-        <img class="disc-img" src="${ result[0].image }" alt="">
-      `
+      imgOne.innerHTML = `<img class="disc-img" src="${ result[0].image }" alt="">`
 
       let nameOne = document.querySelector('.one-name')
       nameOne.innerText = result[0].name
@@ -89,9 +82,7 @@
 
       // discover - two
       let imgTwo = document.querySelector('.two-img')
-      imgTwo.innerHTML = `
-        <img class="disc-img" src="${ result[1].image }" alt="">
-      `
+      imgTwo.innerHTML = `<img class="disc-img" src="${ result[1].image }" alt="">`
 
       let nameTwo = document.querySelector('.two-name')
       nameTwo.innerText = result[1].name

@@ -4,7 +4,7 @@
     <header class="anim--enter">
       <h2 class="mb-1 fs-md f--nmb">Discover Something New</h2>
       <p class="f--us">Feeling adventourous? Random spots are shown below – <span class="link refresh">refresh the list</span> or browse more directly in the section to the left.</p>
-      <img class="veggie-01" src="../static/img/veggies/veggies-05.png" alt="asparagus illustration">
+      <img class="veggie-01" src="../static/img/veggies/veggies-06.png" alt="asparagus illustration">
     </header>
 
     <ul>

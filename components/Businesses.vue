@@ -12,7 +12,8 @@
       <img class="anim--enter veggie-01" src="../static/img/veggies/veggies-01.png" alt="broccoli illustration">
     </header>
 
-    <DiscoverSm/>
+    <!-- discover small -->
+    <!-- <DiscoverSm/> -->
 
     <section id="items" class="items">
       <div class="anim--enter tools mb-6">
