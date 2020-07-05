@@ -182,17 +182,6 @@
 
 <script>
   export default {
-    mounted() {
-      // // entrance
-      // gsap.from('.anim--enter', {
-      //   opacity: 0,
-      //   y: 112,
-      //   // skewY: 10,
-      //   stagger: .075,
-      //   duration: 1,
-      //   // delay: .64,
-      //   ease: Power2.easeInOut
-      // })
-    },
+
   }
 </script>
