@@ -199,6 +199,9 @@
 // discover styles
 .discover {
   // border: 2px solid yellow;
+  .smm {
+    border: 1px solid red;
+  }
 
   .content {
 
@@ -217,7 +220,6 @@
   a {
     font-size: 1.3rem;
     text-decoration: underline;
-    // &:hover { text-decoration: none; }
   }
 
   /* non-touch styles */

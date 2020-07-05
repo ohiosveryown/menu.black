@@ -12,9 +12,9 @@
       <img class="anim--enter veggie-01" src="../static/img/veggies/veggies-01.png" alt="broccoli illustration">
     </header>
 
+    <DiscoverSm/>
+
     <section id="items" class="items">
-
-
       <div class="anim--enter tools mb-6">
         <div class="tools--search f--us">
           <svg width="24" height="24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.254 13.414a5.5 5.5 0 117.778-7.779 5.5 5.5 0 01-7.778 7.779zm-.34 1.047a6.5 6.5 0 10-.708-.707l-4.963 4.963.707.707 4.963-4.963z" fill="#000"/></svg>
@@ -181,7 +181,8 @@
 
 
 <script>
+  import DiscoverSm from './DiscoverSm'
   export default {
-
+    components: { DiscoverSm },
   }
 </script>
