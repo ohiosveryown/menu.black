@@ -13,13 +13,8 @@
 <style lang="scss" scoped>
   @import '../style/grid.scss';
 
-  .about-parent {
-    display: none;
-  }
-
-  .active {
-    display: flex;
-  }
+  .about-parent { display: none; }
+  .active { display: flex; }
 
 </style>
 

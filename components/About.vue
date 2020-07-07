@@ -25,8 +25,17 @@
     background: var(--darkkale);
     overflow: hidden;
 
+    top: 9.6rem; right: 0; left: 0;
+    margin: 0 auto;
+    padding: 2rem 2.4rem;
+    width: calc(100% -  11.2rem);
+
+    @include breakpoint(md) {
+      width: calc(100% -  16rem);
+    }
+
     @include breakpoint(mdl) {
-      top: 9.6rem; right: 8rem;
+      top: 9.6rem; right: 4rem; left: auto;
       padding: 2rem 2.4rem;
       max-width: 52.4rem;
     }
@@ -36,13 +45,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
     width: 100%;
-    @include breakpoint(md) { margin-bottom: 2rem; }
   }
 
   h1 { @include breakpoint(md) { font-size: 3.2rem; }}
   svg { cursor: pointer; }
   p { margin-bottom: 1.6rem; }
+
+  h1:after {
+    display: inline-block;
+    content: '';
+    margin-left: 1.2rem;
+    width: 2.4rem; height: 2.4rem;
+    background-image: url('../static/img/veggies/veggies-07.png');
+    background-size: 2.4rem 2.4rem;
+    transform: rotate(20deg);
+  }
 
   img {
     position: absolute;
