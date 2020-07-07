@@ -72,6 +72,11 @@
     opacity: .4;
   }
 
+  article {
+    max-height: 70vh;
+    overflow-y: scroll;
+  }
+
 </style>
 
 
