@@ -33,10 +33,20 @@ const items = [
     name: "A Little Slice of Heaven",
     type: 'Bakery',
     neighborhood: 'Decatur',
-    address: '4808 Flat Shoals Pkwy, Decatur, GA',
+    address: '4808 Flat Shoals Pkwy',
     url: 'https://www.google.com',
     link: 'menu/order',
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/QF-L4i-XIEZW6SmIobpZng/o.jpg',
+  },
+
+  {
+    name: "Roots PBC",
+    type: 'Vegan',
+    neighborhood: 'Sylvan Hills',
+    address: '2051 Metropolitan Pkwy',
+    url: 'https://www.rootspbc.com/menu',
+    link: 'menu/order',
+    image: 'https://s3-media0.fl.yelpcdn.com/bphoto/eHfN7nd-7fpp93ivon9gYw/o.jpg',
   },
 ]
 
