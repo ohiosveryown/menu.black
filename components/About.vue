@@ -28,11 +28,9 @@
     top: 9.6rem; right: 0; left: 0;
     margin: 0 auto;
     padding: 2rem 2.4rem;
-    width: calc(100% -  11.2rem);
+    width: calc(100% -  8.8rem);
 
-    @include breakpoint(md) {
-      width: calc(100% -  16rem);
-    }
+    @include breakpoint(md) { width: calc(100% -  16rem); }
 
     @include breakpoint(mdl) {
       top: 9.6rem; right: 4rem; left: auto;
@@ -60,7 +58,9 @@
     width: 2.4rem; height: 2.4rem;
     background-image: url('../static/img/veggies/veggies-07.png');
     background-size: 2.4rem 2.4rem;
-    transform: rotate(20deg);
+    transform: rotate(20deg) translateY(.5rem);
+
+    @include breakpoint(md) { transform: rotate(20deg) translateY(.2rem); }
   }
 
   img {

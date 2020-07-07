@@ -25,19 +25,14 @@
     backdrop-filter: blur(20px);
   }
 
-  @supports not (backdrop-filter: blur(20px)) {
-    nav { background: var(--kale); }
-  }
+  @supports not (backdrop-filter: blur(20px)) { nav { background: var(--kale); }}
 
   ul {
     display: flex;
     position: relative;
     margin: 0 auto;
     width: calc(100% - 6.4rem);
-
-    @include breakpoint(md) {
-      width: calc(100% -  11.2rem);
-    }
+    @include breakpoint(md) { width: calc(100% -  11.2rem); }
   }
 
   li {
