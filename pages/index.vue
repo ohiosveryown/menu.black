@@ -53,11 +53,11 @@
       itemList.add({
         name: "9 Mile Station",
         type: 'American',
-        neighborhood: 'Virginia Highlands',
+        neighborhood: 'Eastside',
         address: '600 Ponce de Leon Ave.',
-        url: 'https://ovo.pink',
+        url: 'http://www.9milestation.com/menu2-dinner',
         link: 'menu / order',
-        image: 'https://res.cloudinary.com/simpleview/image/upload/w_485,h_300,c_fill/crm/atlanta/ca16644d-d3f5-4b7d-8a46-4f39648a0170_88a3b463-5056-a36a-0a7f9c55f05d22a1.png',
+        image: 'https://s3-media0.fl.yelpcdn.com/bphoto/i7NWA8rRoLBtQyl9KPrwdQ/o.jpg',
       })
 
       // // discover

@@ -116,6 +116,33 @@ const items = [
     link: 'menu/order',
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/1ydPX4Z9LBRNuEsHcjXf9w/o.jpg',
   },
+  {
+    name: "Pit Boss BBQ",
+    type: 'BBQ',
+    neighborhood: 'Southside',
+    address: '856 Virginia Ave',
+    url: 'http://places.singleplatform.com/pit-boss-bbq/menu',
+    link: 'menu/order',
+    image: 'https://s3-media0.fl.yelpcdn.com/bphoto/3nD9YqQKHE6SNESGiwKvPg/o.jpg',
+  },
+  {
+    name: "Community Grounds Cafe",
+    type: 'Coffee & Tea',
+    neighborhood: 'Southside',
+    address: '1297 McDonough Blvd SE',
+    url: 'https://communitygrounds.com',
+    link: 'menu/order',
+    image: 'https://s3-media0.fl.yelpcdn.com/bphoto/jlIATRA6BI4EfimDQ0hbnw/o.jpg',
+  },
+  {
+    name: "Soul Vegetarian",
+    type: 'Vegan',
+    neighborhood: 'Southside',
+    address: '879 Ralph David Abernathy Blvd SW',
+    url: 'https://soulvegsouth.com/menu',
+    link: 'menu/order',
+    image: 'https://s3-media0.fl.yelpcdn.com/bphoto/2g1POR6zMULOFMItxNMZsA/o.jpg',
+  },
 ]
 
 export { items }
