@@ -108,16 +108,9 @@
     // margin: 11.2rem 5.6rem 0 0;
     // width: 32%; height: 64%;
 
-    margin: 5.6rem 3.4rem 0 0;
-    width: 40%; height: 68%;
+    margin: 9.6rem 3.4rem 0 0;
+    width: 40%; height: 64%;
 
-    @include breakpoint(xl) {
-      margin: 9.6rem 3.4rem 0 0;
-      width: 40%; height: 64%;
-    }
-
-    // margin: 9.6rem 3.4rem 0 0;
-    // width: 32%; height: 72%;
   }
 
   figure {
