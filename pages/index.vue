@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="about-parent">
+      <About/>
+    </div>
     <Navigation/>
     <Businesses/>
     <Discover/>
@@ -10,6 +13,14 @@
 <style lang="scss" scoped>
   @import '../style/grid.scss';
 
+  .about-parent {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+
 </style>
 
 
@@ -17,11 +28,24 @@
   import Navigation from '../components/Navigation'
   import Businesses from '../components/Businesses'
   import Discover from '../components/Discover'
+  import About from '../components/About'
   import { items } from '../static/items'
 
   export default {
-    components: { Navigation, Businesses, Discover },
+    components: { Navigation, Businesses, Discover, About },
     mounted() {
+      const about = document.querySelector('.about')
+      const aboutParent = document.querySelector('.about-parent')
+      const close = document.querySelector('.close')
+
+      about.addEventListener('click', () => {
+        aboutParent.classList.toggle('active')
+      })
+
+      close.addEventListener('click', () => {
+        aboutParent.classList.toggle('active')
+      })
+
       const options = {
         valueNames: [
           'name',

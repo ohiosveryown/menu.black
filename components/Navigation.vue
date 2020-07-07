@@ -4,7 +4,7 @@
     <ul class="f--usb">
       <li>menu.black</li>
       <li>atlanta</li>
-      <li>about</li>
+      <li class="about">about</li>
     </ul>
 
   </nav>
