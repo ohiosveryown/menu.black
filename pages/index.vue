@@ -29,6 +29,8 @@
   export default {
     components: { Navigation, Businesses, Discover, About },
     mounted() {
+
+      // about
       const about = document.querySelector('.about')
       const aboutParent = document.querySelector('.about-parent')
       const close = document.querySelector('.close')
@@ -40,6 +42,13 @@
       close.addEventListener('click', () => {
         aboutParent.classList.toggle('active')
       })
+
+      document.onkeypress = function(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 27) {
+          aboutParent.classList.remove('active')
+        }
+      }
 
       const options = {
         valueNames: [
