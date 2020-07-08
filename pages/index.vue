@@ -43,13 +43,14 @@
         aboutParent.classList.toggle('active')
       })
 
-      document.onkeypress = function(evt) {
-        evt = evt || window.event;
+      document.onkeypress = (evt) => {
+        evt = evt || window.event
         if (evt.keyCode == 27) {
           aboutParent.classList.remove('active')
         }
       }
 
+      // list logic
       const options = {
         valueNames: [
           'name',
