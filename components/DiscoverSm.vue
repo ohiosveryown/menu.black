@@ -8,32 +8,39 @@
 
     <ul>
       <li class="anim--enter discover">
-        <figure class="one-img"/>
+        <figure class="one-img--sm"/>
         <div class="content">
           <div class="one-link f--usb uc"/>
         </div>
       </li>
 
       <li class="anim--enter discover">
-        <figure class="two-img"/>
+        <figure class="two-img--sm"/>
         <div class="content">
           <div class="two-link f--usb uc"/>
         </div>
       </li>
 
       <li class="anim--enter discover">
-        <figure class="three-img"/>
+        <figure class="three-img--sm"/>
         <div class="content">
           <div class="three-link f--usb uc"/>
         </div>
       </li>
 
       <li class="anim--enter discover">
-        <figure class="four-img"/>
+        <figure class="four-img--sm"/>
         <div class="content">
           <div class="four-link f--usb uc"/>
         </div>
       </li>
+
+      <!-- <li class="anim--enter discover">
+        <figure class="five-img--sm"/>
+        <div class="content">
+          <div class="five-link f--usb uc"/>
+        </div>
+      </li> -->
     </ul>
 
   </aside>
@@ -53,9 +60,7 @@
       width: calc(100% + 11.2rem);
     }
 
-    @include breakpoint(mdl) {
-      display: none;
-    }
+    @include breakpoint(mdl) { display: none; }
   }
 
   header {

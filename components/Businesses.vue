@@ -13,7 +13,7 @@
     </header>
 
     <!-- discover small -->
-    <!-- <DiscoverSm/> -->
+    <DiscoverSm/>
 
     <section id="items" class="items">
       <div class="anim--enter tools mb-4">

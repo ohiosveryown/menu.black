@@ -98,6 +98,9 @@
       let imgOne = document.querySelector('.one-img')
       imgOne.innerHTML = `<img class="disc-img" src="${ result[0].image }" alt="">`
 
+      let imgOneSm = document.querySelector('.one-img--sm')
+      imgOneSm.innerHTML = `<img class="disc-img" src="${ result[0].image }" alt="">`
+
       let nameOne = document.querySelector('.one-name')
       nameOne.innerText = result[0].name
 
@@ -112,6 +115,9 @@
       // discover - two
       let imgTwo = document.querySelector('.two-img')
       imgTwo.innerHTML = `<img class="disc-img" src="${ result[1].image }" alt="">`
+
+      let imgTwoSm = document.querySelector('.two-img--sm')
+      imgTwoSm.innerHTML = `<img class="disc-img" src="${ result[1].image }" alt="">`
 
       let nameTwo = document.querySelector('.two-name')
       nameTwo.innerText = result[1].name
@@ -128,6 +134,9 @@
       let imgThree = document.querySelector('.three-img')
       imgThree.innerHTML = `<img class="disc-img" src="${ result[2].image }" alt="">`
 
+      let imgThreeSm = document.querySelector('.three-img--sm')
+      imgThreeSm.innerHTML = `<img class="disc-img" src="${ result[2].image }" alt="">`
+
       let nameThree = document.querySelector('.three-name')
       nameThree.innerText = result[2].name
 
@@ -140,6 +149,9 @@
       // discover - four
       let imgFour = document.querySelector('.four-img')
       imgFour.innerHTML = `<img class="disc-img" src="${ result[3].image }" alt="">`
+
+      let imgFourSm = document.querySelector('.four-img--sm')
+      imgFourSm.innerHTML = `<img class="disc-img" src="${ result[3].image }" alt="">`
 
       let nameFour = document.querySelector('.four-name')
       nameFour.innerText = result[3].name
@@ -160,18 +172,21 @@
 
         // one
         imgOne.innerHTML = `<img class="disc-img" src="${ result[0].image }" alt="">`
+        imgOneSm.innerHTML = `<img class="disc-img" src="${ result[0].image }" alt="">`
         nameOne.innerText = result[0].name
         typeOne.innerText = result[0].type
         linkOne.innerHTML = `<a target="_blank" href="${ result[0].url }">${ result[0].link }</a>`
 
         // two
         imgTwo.innerHTML = `<img class="disc-img" src="${ result[1].image }" alt="">`
+        imgTwoSm.innerHTML = `<img class="disc-img" src="${ result[1].image }" alt="">`
         nameTwo.innerText = result[1].name
         typeTwo.innerText = result[1].type
         linkTwo.innerHTML = `<a target="_blank" href="${ result[1].url }">${ result[1].link }</a>`
 
         // three
         imgThree.innerHTML = `<img class="disc-img" src="${ result[2].image }" alt="">`
+        imgThreeSm.innerHTML = `<img class="disc-img" src="${ result[2].image }" alt="">`
         nameThree.innerText = result[2].name
         typeThree.innerText = result[2].type
         linkThree.innerHTML = `<a target="_blank" href="${ result[2].url }">${ result[2].link }</a>`
