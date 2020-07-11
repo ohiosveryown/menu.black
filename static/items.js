@@ -197,6 +197,15 @@ const items = [
     link: 'menu/order',
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/HiMBhqb8PW-YN6R9vIfOPA/o.jpg',
   },
+  {
+    name: "Just Add Honey",
+    type: 'Coffee & Tea',
+    neighborhood: 'Eastside',
+    address: '684 John Wesley Dobbs Ave NE',
+    url: 'http://justaddhoney.net',
+    link: 'menu/order',
+    image: 'https://s3-media0.fl.yelpcdn.com/bphoto/FzWqbbD73ZAQPZ379nM4zA/o.jpg',
+  },
 ]
 
 export { items }

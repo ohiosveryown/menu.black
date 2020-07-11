@@ -28,6 +28,13 @@
 
   export default {
     components: { Navigation, Businesses, Discover, About },
+
+    head() {
+        return {
+          title: 'Black Owned Food & Drinks In Atlanta'
+        }
+      },
+
     mounted() {
 
       // about
@@ -108,9 +115,10 @@
       typeOne.innerText = result[0].type
 
       let linkOne = document.querySelector('.one-link')
-      linkOne.innerHTML = `
-        <a target="_blank" href="${ result[0].url }">${ result[0].link }</a>
-      `
+      linkOne.innerHTML = `<a target="_blank" href="${ result[0].url }">${ result[0].link }</a>`
+
+      let linkOneSm = document.querySelector('.one-link--sm')
+      linkOneSm.innerHTML = `<a target="_blank" href="${ result[0].url }">${ result[0].link }</a>`
 
       // discover - two
       let imgTwo = document.querySelector('.two-img')
@@ -126,9 +134,10 @@
       typeTwo.innerText = result[1].type
 
       let linkTwo = document.querySelector('.two-link')
-      linkTwo.innerHTML = `
-        <a target="_blank" href="${ result[1].url }">${ result[1].link }</a>
-      `
+      linkTwo.innerHTML = `<a target="_blank" href="${ result[1].url }">${ result[1].link }</a>`
+
+      let linkTwoSm = document.querySelector('.two-link--sm')
+      linkTwoSm.innerHTML = `<a target="_blank" href="${ result[1].url }">${ result[1].link }</a>`
 
       // discover - three
       let imgThree = document.querySelector('.three-img')
@@ -146,6 +155,9 @@
       let linkThree = document.querySelector('.three-link')
       linkThree.innerHTML = `<a target="_blank" href="${ result[2].url }">${ result[2].link }</a>`
 
+      let linkThreeSm = document.querySelector('.three-link--sm')
+      linkThreeSm.innerHTML = `<a target="_blank" href="${ result[2].url }">${ result[2].link }</a>`
+
       // discover - four
       let imgFour = document.querySelector('.four-img')
       imgFour.innerHTML = `<img class="disc-img" src="${ result[3].image }" alt="">`
@@ -162,8 +174,11 @@
       let linkFour = document.querySelector('.four-link')
       linkFour.innerHTML = `<a target="_blank" href="${ result[3].url }">${ result[3].link }</a>`
 
+      let linkFourSm = document.querySelector('.four-link--sm')
+      linkFourSm.innerHTML = `<a target="_blank" href="${ result[3].url }">${ result[3].link }</a>`
 
-      // refresh
+
+      // refresh sm
       const refresh = document.querySelector('.refresh')
       refresh.addEventListener('click', () => {
         result = items.slice(0, 4).map(function () {
@@ -199,6 +214,7 @@
         linkFour.innerHTML = `<a target="_blank" href="${ result[3].url }">${ result[3].link }</a>`
       })
 
+      // refresh lg
       const refreshLg = document.querySelector('.refresh-lg')
       refreshLg.addEventListener('click', () => {
         result = items.slice(0, 4).map(function () {

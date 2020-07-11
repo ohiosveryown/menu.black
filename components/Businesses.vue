@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <main class="wrapper">
 
     <header class="mb-5">
       <h1 class="anim--enter fs-lg f--nmb">Black Owned</h1>
@@ -46,7 +46,7 @@
       <ul class="anim--enter f--us list"></ul>
     </section>
 
-  </div>
+  </main>
 </template>
 
 
