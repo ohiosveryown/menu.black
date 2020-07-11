@@ -39,7 +39,7 @@
       <div class="anim--enter updated">
         <h3 class="f--usb uc fs--sm">Restaurant list</h3>
         <span/>
-        <div class="updated--date uc fs--sm">Updated: July, 2020</div>
+        <div class="updated--date uc fs--sm">Updated: July 2020</div>
       </div>
 
       <!-- results -->
