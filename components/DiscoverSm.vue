@@ -52,11 +52,13 @@
 
   aside {
     margin-left: -3.2rem;
+    margin-bottom: 4rem;
+    margin: 8rem 0 4rem -3.2rem;
     width: calc(100% + 6.4rem);
     overflow-x: scroll;
 
     @include breakpoint(md) {
-      margin-left: -5.6rem;
+      margin: 8rem 0 0 -5.6rem;
       width: calc(100% + 11.2rem);
     }
 
