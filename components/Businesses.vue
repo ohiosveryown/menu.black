@@ -24,8 +24,8 @@
         </div>
         <div class="tools--sort">
           <div class="tools--sort-btns">
-            <button class="sort" data-sort="neighborhood">By Location</button>
-            <button class="sort" data-sort="type">By Food Type</button>
+            <button class="sort neighborhood" data-sort="neighborhood">By Location</button>
+            <button class="sort type" data-sort="type">By Food Type</button>
           </div>
           <div class="tools--sort-label">
             <small class="f--us fs--sm uc">...or sort by location or food type</small>
@@ -196,8 +196,10 @@
 
   button:focus, button:hover {
     outline: 0px solid var(--gravity);
-    background: var(--darkkale)
+    background: var(--darkkale);
   }
+
+  .sort--active { background: var(--darkkale); }
 
 </style>
 
@@ -206,5 +208,27 @@
   import DiscoverSm from './DiscoverSm'
   export default {
     components: { DiscoverSm },
+
+    mounted() {
+      const input = document.querySelector('.search')
+      const neighborhood = document.querySelector('.neighborhood')
+      const type = document.querySelector('.type')
+
+      input.addEventListener('click', () => {
+        neighborhood.classList.remove('sort--active')
+        type.classList.remove('sort--active')
+      })
+
+      neighborhood.addEventListener('click', () => {
+        neighborhood.classList.add('sort--active')
+        type.classList.remove('sort--active')
+      })
+
+      type.addEventListener('click', () => {
+        neighborhood.classList.remove('sort--active')
+        type.classList.add('sort--active')
+      })
+
+    }
   }
 </script>
