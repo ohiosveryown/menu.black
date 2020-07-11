@@ -77,6 +77,16 @@
     overflow-y: scroll;
   }
 
+  .link:after {
+    display: inline-block;
+    content: '';
+    margin-left: .6rem;
+    margin: 0 .8rem 0 .4rem;
+    width: 1rem; height: 1rem;
+    background-image: url('../static/img/new-tab.svg');
+    background-size: 1rem 1rem;
+  }
+
 </style>
 
 
