@@ -6,7 +6,7 @@
       <h1 class="anim--enter mb-2 fs-lg f--nmb">Restaurants in Atlanta</h1>
 
       <article>
-        <p class="anim--enter f--us">menu.black is a growing collection of black-owned food spots in Atlanta. Don’t see a business in the collection that should be added? <a class="link" target="_blank" href="https://forms.gle/GbfRiMT4yZRxv9Ry9">Contact here</a> and we’ll add them to the list.</p>
+        <p class="anim--enter f--us">menu.black is a growing collection of black-owned food spots in Atlanta. Don’t see a business in the collection that should be added? <a class="link" target="_blank" href="https://forms.gle/VeK4sspTLQUjYNLQA">Contact here</a> and we’ll add them to the list.</p>
       </article>
 
       <img class="anim--enter veggie-01" src="../static/img/veggies/veggies-01.png" alt="broccoli illustration">
