@@ -7,7 +7,7 @@
 
     <article class="f--us">
       <p>menu.black was created by me, <a class="link" target="_blank" href="https://twitter.com/cmykw_">Matt</a>. I live in Atlanta, I love food and I wanted to make something to help create awareness and celebrate the diversity of Atlanta and it’s food. You can view the <a class="link" target="_blank" href="https://github.com/ohiosveryown/menu.black-2020">source here</a>.</p>
-      <p>Thanks to <a class="link" target="_blank" href="https://twitter.com/imanashanti">@imanashanti</a> for helping curate the list!</p>
+      <p>Thanks to <a class="link" target="_blank" href="https://twitter.com/imanashanti">@imanashanti</a> for her lists of restaurants.</p>
       <p>Food brings people together, and good food keeps people coming back. If you’d like to submit a spot, <a class="link" target="_blank" href="https://forms.gle/VeK4sspTLQUjYNLQA">contact here</a>. Be kind to one another, and enjoy the food.</p>
     </article>
 
