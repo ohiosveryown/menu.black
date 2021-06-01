@@ -3,14 +3,17 @@
     <h1 class="title">
       <span class="row-one">
         <span>Menu</span>
-        <span class="emoji">{{ emoji }}</span>
+        <span
+          @click="randoEmoji()"
+          class="emoji">
+          {{ emoji }}
+        </span>
         <span class="dot">Dot</span>
       </span>
 
       <span class="row-two">
         <span class="version">
-          <a
-            target="_blank"
+          <a target="_blank"
             href="https://github.com/ohiosveryown/menu.black">v.1.5
           </a>
         </span>
@@ -42,6 +45,7 @@
 
   .emoji {
     font-size: 6vw;
+    cursor: pointer;
     @include breakpoint(lg) {
       margin-top: 1.2rem;
       font-size: 7.2rem;
@@ -76,12 +80,16 @@
     data() {
       return {
         emojis: [ '🥒', '🌶', '🫑', '🍕', '🍩', '🍔', '🌯', '🥦', '🧇', ],
-        // emoji: ''
+        emoji: ''
+      }
+    },
+    methods: {
+      randoEmoji : function(e) {
+        this.emoji = this.emojis[~~(Math.random() * this.emojis.length)]
       }
     },
     created() {
-      const randoEmoji = Math.floor(Math.random() * this.emojis.length)
-      this.emoji = this.emojis[randoEmoji]
+      this.randoEmoji()
     }
   }
 </script>
