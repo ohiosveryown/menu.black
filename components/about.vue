@@ -16,8 +16,10 @@
 
   span {
     position: relative;
-    color: rgba(255,255,255,.48);
     cursor: pointer;
+    opacity: .48;
+    transition: opacity 300ms ease;
+    &:hover { opacity: 1; }
   }
 
 </style>

@@ -3,10 +3,19 @@
     <h1 class="title">
       <span class="row-one">
         <span>Menu</span>
-        <span class="emoji mt-2">🌶️</span>
+        <span class="emoji">{{ emoji }}</span>
         <span class="dot">Dot</span>
       </span>
-      <span class="black">Black</span>
+
+      <span class="row-two">
+        <span class="version">
+          <a
+            target="_blank"
+            href="https://github.com/ohiosveryown/menu.black">v.1.5
+          </a>
+        </span>
+        <span class="black">bĿack</span>
+      </span>
     </h1>
   </header>
 </template>
@@ -34,6 +43,7 @@
   .emoji {
     font-size: 6vw;
     @include breakpoint(lg) {
+      margin-top: 1.2rem;
       font-size: 7.2rem;
     }
   }
@@ -44,16 +54,34 @@
     -webkit-text-stroke: 1px var(--cucumber);
   }
 
-  .black {
+  .row-two {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
 
+  .version {
+    margin: 1rem 3.2rem 0 0;
+    font-size: 1.6rem;
+    opacity: .48;
+    @include breakpoint(md) {
+
+    }
+  }
 </style>
 
 
 <script>
   export default {
-
+    data() {
+      return {
+        emojis: [ '🥒', '🌶', '🫑', '🍕', '🍩', '🍔', '🌯', '🥦', '🧇', ],
+        // emoji: ''
+      }
+    },
+    created() {
+      const randoEmoji = Math.floor(Math.random() * this.emojis.length)
+      this.emoji = this.emojis[randoEmoji]
+    }
   }
 </script>
