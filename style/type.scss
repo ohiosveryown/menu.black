@@ -1,43 +1,17 @@
 @import '~/style/grid.scss';
 
 @font-face {
-  font-family: "untitled-sans-bold";
-  src: url("../static/fonts/untitled-sans-bold.woff2") format("woff2");
+  font-family: "polysans-slim";
+  src: url("../static/fonts/polysans-slim.woff2") format("woff2");
   font-display: swap;
 }
 
-@font-face {
-  font-family: "untitled-sans-regular";
-  src: url("../static/fonts/untitled-sans-regular.woff2") format("woff2");
-  font-display: swap;
-}
+.title { font-family: 'polysans-slim', var(--system-ui); }
 
-@font-face {
-  font-family: "neue-montreal-bold";
-  src: url("../static/fonts/neue-montreal-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
- p { line-height: 1.6; }
-
-.f--nmb { font-family: 'neue-montreal-bold', var(--system-ui); }
-.f--usb { font-family: 'untitled-sans-bold', var(--system-ui); }
-.f--us  { font-family: 'untitled-sans-regular', var(--system-ui); }
-
-.fs-lg {
-  font-size: 2.4rem;
-  line-height: 1.1;
-  @include breakpoint(md) { font-size: 3.2vw; }
-}
-
-.fs-md {
-  font-size: 2rem;
-  line-height: 1.1;
-  @include breakpoint(md) { font-size: 2.8vw; }
-}
-
-.fs--sm { font-size: 1.3rem; }
-
+.bold {
+  text-stroke: .75px var(--onion);
+  -webkit-text-stroke: .75px var(--onion);
+ }
 
 .uc { text-transform: uppercase; }
 .tac { text-align: center; }
