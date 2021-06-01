@@ -1,3 +1,6 @@
 {
-  "tommasonegri.vue.serverRunning" : true
+  "tommasonegri.vue.serverRunning" : true,
+  "workspace.art_style" : 1,
+  "workspace.color" : 0,
+  "workspace.name" : "menu.black"
 }
