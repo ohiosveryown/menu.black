@@ -27,14 +27,17 @@
 <style lang="scss" scoped>
   @import '../style/grid.scss';
 
-  h1 {
-    margin: 3.2rem 0 0;
-    font-size: 16vw;
-    line-height: .92;
-    @include breakpoint(lg) {
-      margin-top: 8.4rem;
-      font-size: 19.2rem;
+  header {
+    margin: 3.2rem auto 7.2rem;
+    @include breakpoint(md) {
+      margin: 8.4rem auto 14rem;
     }
+  }
+
+  h1 {
+    font-size: 16vw;
+    line-height: .82;
+    @include breakpoint(lg) { font-size: 19.2rem; }
   }
 
   .row-one {
@@ -79,7 +82,7 @@
   export default {
     data() {
       return {
-        emojis: [ '🥒', '🌶', '🫑', '🍕', '🍩', '🍔', '🌯', '🥦', '🧇', ],
+        emojis: ['🥒', '🌶', '🫑', '🍕', '🍩', '🍔', '🌯', '🥦', '🧇', '🍟', '🥞', '🍳', '🍋', '🫒', '🥑', '🥝'],
         emoji: ''
       }
     },

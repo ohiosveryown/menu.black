@@ -2,6 +2,7 @@
   <div>
     <about/>
     <headline/>
+    <subhead/>
   </div>
 </template>
 
@@ -18,9 +19,10 @@
 <script>
   import about from '../components/about'
   import headline from '../components/headline'
+  import subhead from '../components/subhead'
 
   export default {
-    components: { about, headline, },
+    components: { about, headline, subhead },
 
     head() {
         return {

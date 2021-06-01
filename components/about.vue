@@ -21,7 +21,6 @@
     transition: opacity 300ms ease;
     &:hover { opacity: 1; }
   }
-
 </style>
 
 
