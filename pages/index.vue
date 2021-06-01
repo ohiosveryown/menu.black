@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="cucumber title uc">Growing</h1>
-    <h2 class="title uc bold">Growing</h2>
+    <about/>
+    <headline/>
   </div>
 </template>
 
@@ -16,10 +16,11 @@
 
 
 <script>
-  // import Navigation from '../components/Navigation'
+  import about from '../components/about'
+  import headline from '../components/headline'
 
   export default {
-    // components: { Navigation, Businesses, Discover, About },
+    components: { about, headline, },
 
     head() {
         return {
