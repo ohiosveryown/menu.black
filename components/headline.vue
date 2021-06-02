@@ -29,14 +29,13 @@
 
   header {
     margin: 3.2rem auto 7.2rem;
-    @include breakpoint(md) {
-      margin: 8.4rem auto 14rem;
-    }
+    @include breakpoint(md) { margin: 8.4rem auto 14rem; }
   }
 
   h1 {
-    font-size: 16vw;
+    font-size: 17vw;
     line-height: .82;
+    @include breakpoint(md) { font-size: 16vw; }
     @include breakpoint(lg) { font-size: 19.2rem; }
   }
 
@@ -68,11 +67,12 @@
   }
 
   .version {
-    margin: 1rem 3.2rem 0 0;
-    font-size: 1.6rem;
+    margin: 1rem 2rem 0 0;
+    font-size: 1.3rem;
     opacity: .48;
     @include breakpoint(md) {
-
+      margin-right: 3.2rem;
+      font-size: 1.6rem;
     }
   }
 </style>
