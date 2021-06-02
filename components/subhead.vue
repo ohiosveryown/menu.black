@@ -1,6 +1,6 @@
 <template>
   <nav class="width">
-    <h2 class="uc taj">
+    <h2 class="title uc taj">
       Is a
       <span class="power">✊🏼✊🏽✊🏾✊🏿</span>
       growing
@@ -47,7 +47,7 @@
     font-size: 3.2vw;
     transform: translateY(-6px);
     @include breakpoint(md) { font-size: 3.8rem; transform: translateY(-4px); }
-    @include breakpoint(lg) { font-size: 3.8rem; }
+    @include breakpoint(lg) { font-size: 3.2rem; transform: translateY(-12px); }
   }
 
   .collection {
