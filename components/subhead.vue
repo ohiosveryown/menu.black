@@ -92,20 +92,23 @@
 
   .arrow {
     display: inline-flex;
-    transform: translateY(.32rem) scale(.64);
+    transform: translateY(.72rem) scale(.48);
+    @include breakpoint(md)  { transform: translateY(.32rem) scale(.64); }
     @include breakpoint(mdl) { transform: translateY(-.56rem) scale(1); }
   }
 
   .smile {
     display: inline-flex;
     padding: 0 3.2rem;
-    transform: translateY(.32rem) scale(.72);
+    transform: translateY(.44rem) scale(.64);
+    @include breakpoint(md)  { transform: translateY(.32rem) scale(.72); }
     @include breakpoint(mdl) { padding: 0 5.6rem; transform: translateY(-.4rem) scale(1); }
   }
 
   .star {
     display: inline-flex;
-    transform: translateY(0) scale(.64);
+    transform: translateY(.4rem) scale(.48);
+    @include breakpoint(md)  { transform: translateY(0) scale(.64); }
     @include breakpoint(mdl) { transform: translate(1rem, -.8rem); }
   }
 </style>
