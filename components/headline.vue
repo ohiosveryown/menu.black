@@ -33,7 +33,7 @@
   }
 
   h1 {
-    font-size: 17vw;
+    font-size: 16.2vw;
     line-height: .82;
     @include breakpoint(md) { font-size: 16vw; }
     @include breakpoint(lg) { font-size: 19.2rem; }
