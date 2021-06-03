@@ -1,5 +1,5 @@
 <template>
-  <header class="width uc">
+  <header class="uc">
     <h1 class="title">
       <span class="row-one">
         <span>Menu</span>

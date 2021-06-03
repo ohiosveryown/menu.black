@@ -1,8 +1,11 @@
 <template>
-  <div>
+  <div class="width">
     <about/>
-    <headline/>
-    <subhead/>
+    <main>
+      <headline/>
+      <subhead/>
+      <discover/>
+    </main>
   </div>
 </template>
 
@@ -20,9 +23,10 @@
   import about from '../components/about'
   import headline from '../components/headline'
   import subhead from '../components/subhead'
+  import discover from '../components/discover'
 
   export default {
-    components: { about, headline, subhead },
+    components: { about, headline, subhead, discover  },
 
     head() {
         return {
