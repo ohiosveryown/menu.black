@@ -18,11 +18,11 @@
   }
 
   h3 {
-    font-size: 5vw;
-    line-height: 1.1;
-    @include breakpoint(md)  { font-size: 4vw; }
+    font-size: 5.6vw;
+    line-height: 1.24;
+    @include breakpoint(md)  { font-size: 4vw; line-height: 1.1; }
     @include breakpoint(mdl) { font-size: 3.6vw; }
-    @include breakpoint(lg) { font-size: 4rem; }
+    @include breakpoint(lg)  { font-size: 4rem; }
   }
 
   .refresh {
@@ -41,7 +41,8 @@
     border-radius: 50%;
     width: 100%; height: 100%;
     background: #92ff00;
-    filter: blur(32px);
+    filter: blur(20px);
+    @include breakpoint(md)  { filter: blur(32px); }
   }
 
 </style>
