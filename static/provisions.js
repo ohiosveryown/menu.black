@@ -1,5 +1,6 @@
 export const  provisions = [
   {
+    key: "1",
     name: "Roots PBC",
     type: 'Vegan',
     neighborhood: 'Westside',
@@ -9,6 +10,7 @@ export const  provisions = [
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/eHfN7nd-7fpp93ivon9gYw/o.jpg',
   },
   {
+    key: "2",
     name: "Desta Ethiopian Kitchen",
     type: 'Ethiopian',
     neighborhood: 'Eastside',
@@ -18,6 +20,7 @@ export const  provisions = [
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/ubdZEz867Suv6ByrMvo15w/o.jpg',
   },
   {
+    key: "3",
     name: "Tassili's",
     type: 'Vegan',
     neighborhood: 'Westside',
@@ -27,6 +30,7 @@ export const  provisions = [
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/6nS-It7tWZIEJqxDYkDhxw/o.jpg',
   },
   {
+    key: "4",
     name: "Le Petit Marche",
     type: 'Breakfast, Sandwiches',
     neighborhood: 'Eastside',
@@ -36,6 +40,7 @@ export const  provisions = [
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/8IDdU77d-9uDRw1fpdD-WA/o.jpg',
   },
   {
+    key: "5",
     name: "Ann's Snack Bar",
     type: 'Sandwiches',
     neighborhood: 'Eastside',
