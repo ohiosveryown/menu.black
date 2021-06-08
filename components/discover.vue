@@ -30,7 +30,7 @@
         <!-- <li @click="randoProv()">{{ provision.name }}</li> -->
 
         <!-- <button v-on:click="shuffle">Shuffle</button> -->
-        <div class="debug" v-for="i in shuffledNumbers.slice(0, 2)" :key="provision.type">{{i}}</div>
+        <div class="debug" v-for="i in shuffledNumbers" :key="provision.type">{{i}}</div>
       </ul>
   </section>
 </template>
@@ -131,7 +131,7 @@
           numbers[first] = numbers[second];
           numbers[second] = temp;
         }
-        this.shuffledNumbers = numbers;
+        this.shuffledNumbers = numbers.slice(0, 3);
       }
     },
 
