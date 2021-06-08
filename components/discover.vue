@@ -9,28 +9,12 @@
         <!-- refresh -->
         <span class="refresh--bg"></span>
       </span>
-      <!-- <span class="">
-        <svg class="squiggle" width="80" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l11.143 8 11.143-8 11.143 8L45.57 1l11.143 8 11.143-8L79 9" stroke="#fff"/></svg>
-      </span> -->
       the list for more offerings ↙</h3>
 
       <ul>
-        <!-- <li v-for="provision in filteredprovisions" :key="provision.name">
-          {{ provision.name }}
-        </li> -->
-
-        <li v-for="provision in provisions.slice(0, 3)" :key="provision.name">
-          {{ provision.name }}
+        <li v-for="provision in shuffledProvisions" :key="provision.id">
+          {{provision.name}}
         </li>
-
-        <!-- <li v-for="provision in provisions" :key="provision.name">
-          {{ provision.name }}
-        </li> -->
-
-        <!-- <li @click="randoProv()">{{ provision.name }}</li> -->
-
-        <!-- <button v-on:click="shuffle">Shuffle</button> -->
-        <div class="debug" v-for="i in shuffledNumbers" :key="provision.type">{{i}}</div>
       </ul>
   </section>
 </template>
@@ -66,16 +50,6 @@
   }
 
   .refresh:before { content: 'Refresh'; }
-  // .refresh:after {
-  //   content:'';
-  //   position: absolute;
-  //   top: 3.8rem; left: 0;
-  //   width: 100%; height: 100%;
-  //   background: url('../static/img/underline-2.svg') no-repeat;
-  //   display: none;
-  //   @include breakpoint(md)  { display: inherit; top: 4rem; }
-  //   @include breakpoint(mdl) { top: 5rem; }
-  // }
 
   .refresh--bg {
     position: absolute;
@@ -104,54 +78,33 @@
       return {
         provisions,
         provision: '',
-        shuffledNumbers: null
+        shuffledProvisions: null
       }
     },
     methods: {
       randoProv : function(e) {
         this.provision = this.provisions[~~(Math.random() * this.provisions.length)]
       },
-      // fisher: function() {
-      //    this.shuffled = this.provisions
-      //     .map((a) => ({sort: Math.random(), value: a}))
-      //     .sort((a, b) => a.sort - b.sort)
-      //     .map((a) => a.value)
-      // }
 
       shuffle() {
-        let numbers = [...this.provisions];
+        let provisions = [...this.provisions]
         let first,
           second,
           temp,
-          count = numbers.length;
-        for (let i = 0; i < 10; i++) {
-          first = Math.floor(Math.random() * count);
-          second = Math.floor(Math.random() * count);
-          temp = numbers[first];
-          numbers[first] = numbers[second];
-          numbers[second] = temp;
+          count = provisions.length;
+        for (let provision = 0; provision < 10; provision++) {
+          first = Math.floor(Math.random() * count)
+          second = Math.floor(Math.random() * count)
+          temp = provisions[first]
+          provisions[first] = provisions[second]
+          provisions[second] = temp
         }
-        this.shuffledNumbers = numbers.slice(0, 3);
+        this.shuffledProvisions = provisions.slice(0, 3)
       }
     },
 
     mounted() {
       this.shuffle()
     },
-
-    // computed: {
-    //   filteredprovisions: function() {
-    //     return this.provisions.slice(0, 4).map(function () {
-    //       return this.splice(Math.floor(Math.random() * this.length), 1)[0]
-    //     },  provisions.slice())
-    //   }
-    // },
-
-    created() {
-      this.randoProv()
-      // this.fisher()
-      // console.log(this.shuffled)
-
-    }
   }
 </script>
