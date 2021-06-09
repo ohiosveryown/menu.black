@@ -1,5 +1,5 @@
 <template>
-  <header class="uc">
+  <header class="width uc">
     <h1 class="title">
       <span class="row-one">
         <span>Menu</span>
@@ -30,6 +30,7 @@
   header {
     margin: 3.2rem auto 7.2rem;
     @include breakpoint(md) { margin: 8.4rem auto 14rem; }
+    @include breakpoint(mdl) { margin: 8.4rem auto 10rem; }
   }
 
   h1 {

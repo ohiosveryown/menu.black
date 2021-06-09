@@ -1,5 +1,5 @@
 <template>
-  <div class="width">
+  <div class="">
     <about/>
     <main>
       <headline/>

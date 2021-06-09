@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="width">
     <h2 class="title uc taj">
       Is a
       <span class="power">✊🏼✊🏽✊🏾✊🏿</span>
@@ -36,6 +36,7 @@
   section {
     margin-bottom: 5.6rem;
     @include breakpoint(md) { margin-bottom: 14rem; }
+    @include breakpoint(mdl) { margin-bottom: 8rem; }
   }
 
   h2 {
