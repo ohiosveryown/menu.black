@@ -14,7 +14,7 @@
       <span class="row-two">
         <span class="version">
           <a target="_blank"
-            href="https://github.com/ohiosveryown/menu.black">v.1.5
+            href="https://github.com/ohiosveryown/menu.black">v.2.0
           </a>
         </span>
         <span class="black">bĿack</span>
@@ -37,7 +37,7 @@
     font-size: 16.2vw;
     line-height: .82;
     @include breakpoint(md) { font-size: 16vw; }
-    @include breakpoint(lg) { font-size: 19.2rem; }
+    // @include breakpoint(lg) { font-size: 19.2rem; }
   }
 
   .row-one {

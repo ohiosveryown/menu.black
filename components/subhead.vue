@@ -44,7 +44,7 @@
     font-size: 6.8vw;
     line-height: 1.1;
     @include breakpoint(md) { font-size: 5.6vw; }
-    @include breakpoint(lg) { font-size: 6.7rem; }
+    // @include breakpoint(lg) { font-size: 6.7rem; }
   }
 
   .power, .food {
@@ -84,15 +84,9 @@
         transform: scale(1.3);
       }
       @include breakpoint(lg) {
-        top: -.68rem;
+        top: -.68rem; left: -2rem;
         transform: scale(1.2);
       }
-    }
-
-    svg {
-      position: absolute;
-      bottom: -.5rem; left: -1rem;
-      width: 100%;
     }
   }
 
