@@ -8,7 +8,7 @@
       <span @click="shuffle" class="refresh">
         <span class="refresh--bg"></span>
       </span>
-      the list for more offerings ↙
+      → the list for more offerings ↙
     </h3>
 
       <ul>
