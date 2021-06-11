@@ -91,7 +91,7 @@
   li, a {
     display: inline-flex;
     align-items: center;
-    margin-right: 4rem;
+    margin-right: 2.4rem;
     @include breakpoint(md) { margin-right: 7.2rem; }
   }
 
@@ -108,7 +108,7 @@
     border-radius: 100px;
     border: 3px solid var(--cucumber);
     margin-right: 1.4rem;
-    width: 24vw; height: 24vw;
+    width: 20vw; height: 20vw;
     object-fit: cover;
     @include breakpoint(md) { width: 10vw; height: 10vw; }
   }
