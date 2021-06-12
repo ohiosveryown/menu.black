@@ -5,6 +5,7 @@
       <headline/>
       <subhead/>
       <discover/>
+      <search/>
     </main>
   </div>
 </template>
@@ -24,9 +25,10 @@
   import headline from '../components/headline'
   import subhead from '../components/subhead'
   import discover from '../components/discover'
+  import search from '../components/search'
 
   export default {
-    components: { about, headline, subhead, discover  },
+    components: { about, headline, subhead, discover, search  },
 
     head() {
         return {

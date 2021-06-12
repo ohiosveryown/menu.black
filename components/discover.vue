@@ -12,7 +12,7 @@
     </h3>
 
       <ul>
-        <li v-for="provision in shuffledProvisions" :key="provision.id">
+        <li v-for="(provision, index) in shuffledProvisions" :key="`name-${index}`">
           <a target="_blank" :href="provision.url">
             <img :src="provision.image" alt="">
             <div class="meta title uc">
@@ -31,7 +31,7 @@
 
   section {
     position: relative;
-    margin-bottom: 40vh;
+    margin-bottom: 14.8rem;
   }
 
   h3 {
@@ -142,7 +142,7 @@
     data() {
       return {
         provisions,
-        provision: '',
+        provision: null,
         shuffledProvisions: null
       }
     },
@@ -153,15 +153,15 @@
       shuffle() {
         let provisions = [...this.provisions]
         let first,
-          second,
-          temp,
-          count = provisions.length;
+            second,
+            temp,
+            count = provisions.length
         for (let provision = 0; provision < 10; provision++) {
-          first = Math.floor(Math.random() * count)
-          second = Math.floor(Math.random() * count)
-          temp = provisions[first]
-          provisions[first] = provisions[second]
-          provisions[second] = temp
+            first = Math.floor(Math.random() * count)
+            second = Math.floor(Math.random() * count)
+            temp = provisions[first]
+            provisions[first] = provisions[second]
+            provisions[second] = temp
         }
         this.shuffledProvisions = provisions.slice(0, 4)
       }
