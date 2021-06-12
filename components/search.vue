@@ -60,13 +60,13 @@
   .textarea--wrapper {
     position: sticky;
     top: 0;
+    z-index: var(--zmax);
     display: flex;
     flex-direction: column;
     margin-bottom: 4rem;
+    padding: 1rem 0;
     border-bottom: 1px solid #fff;
     width: 100%;
-
-    padding: 1rem 0;
     background: var(--gravity);
     box-shadow: 0px 0px 44px 16px #000000;
     @include breakpoint(md) {
