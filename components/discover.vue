@@ -31,7 +31,8 @@
 
   section {
     position: relative;
-    margin-bottom: 14.8rem;
+    @include breakpoint(md) { margin-bottom: 6.4rem; }
+    @include breakpoint(lg) { margin-bottom: 9.6rem; }
   }
 
   h3 {
@@ -55,6 +56,7 @@
     border-radius: 50%;
     width: 100%; height: 100%;
     cursor: pointer;
+    &:before { content: 'Refresh'; }
   }
 
   @media(pointer: fine) {
@@ -64,8 +66,6 @@
       -webkit-text-stroke: 1px var(--cucumber);
     }
   }
-
-  .refresh:before { content: 'Refresh'; }
 
   .refresh--bg {
     position: absolute;
