@@ -53,9 +53,7 @@
 <style lang="scss" scoped>
   @import '../style/grid.scss';
 
-  section {
-    margin-bottom: 20vw;
-  }
+  section { margin-bottom: 10vw; }
 
   .textarea--wrapper {
     position: sticky;
@@ -70,6 +68,7 @@
     background: var(--gravity);
     box-shadow: 0px 0px 44px 16px #000000;
     @include breakpoint(md) {
+      margin-bottom: 6.4rem;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
@@ -157,11 +156,7 @@
 
   .url { font-style: normal; width: max-content; }
 
-  @media(pointer: fine) {
-    .url:hover {
-      opacity: 1;
-    }
-  }
+  @media(pointer: fine) { .url:hover { opacity: 1; }}
 
   .empty {
     margin-top: 3.2rem;

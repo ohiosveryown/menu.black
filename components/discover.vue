@@ -89,7 +89,8 @@
     display: inline-flex;
     align-items: center;
     margin-right: 2.4rem;
-    @include breakpoint(md) { margin-right: 7.2rem; }
+    @include breakpoint(mdl) { margin-right: 4rem; }
+    @include breakpoint(xl)  { margin-right: 7.2rem; }
   }
 
   @media(pointer: fine) {
