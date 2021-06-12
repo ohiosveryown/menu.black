@@ -28,7 +28,7 @@
   import search from '../components/search'
 
   export default {
-    components: { about, headline, subhead, discover, search  },
+    components: { about, headline, subhead, discover, search },
 
     head() {
         return {

@@ -1,12 +1,12 @@
 @import '~/style/grid.scss';
 
 @font-face {
-  font-family: "polysans-slim";
-  src: url("../static/fonts/polysans-slim.woff2") format("woff2");
+  font-family: "polysans";
+  src: url("../static/fonts/polysans.woff2") format("woff2");
   font-display: swap;
 }
 
-.title { font-family: 'polysans-slim', var(--system-ui); }
+.title { font-family: 'polysans', var(--system-ui); }
 
 .bold {
   text-stroke: .75px var(--onion);

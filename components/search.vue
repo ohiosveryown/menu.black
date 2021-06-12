@@ -29,7 +29,7 @@
     <ul>
       <li v-for="(provision, index) in filteredProvisions" :key="`name-${index}`">
         <img :src="provision.image" :alt="provision.name">
-        <div class="info">
+        <div class="info title uc">
           <div class="meta">
             <div>{{ provision.name }}</div>
             <div>{{ provision.type }}</div>
@@ -40,7 +40,7 @@
             <div>{{ provision.neighborhood }}</div>
           </div>
 
-          <footer>
+          <footer class="url">
             <a target="_blank" :href="provision.url">Menu ↗</a>
           </footer>
         </div>
@@ -58,11 +58,17 @@
   }
 
   .textarea--wrapper {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5.6rem;
+    margin-bottom: 4rem;
     border-bottom: 1px solid #fff;
     width: 100%;
+
+    padding: 1rem 0;
+    background: var(--gravity);
+    box-shadow: 0px 0px 44px 16px #000000;
     @include breakpoint(md) {
       flex-direction: row;
       align-items: center;
@@ -72,14 +78,14 @@
 
   textarea {
     border: none;
-    margin-top: -.4rem;
+    margin-top: -.8rem;
     width: 100%;
     background: none;
-    color: var(--coconut);
+    color: var(--cucumber);
     resize: none;
     @include breakpoint(md) {
       flex: 1;
-      margin-top: 0;
+      margin-top: .2rem;
       margin-left: 2.4rem;
       text-align: right;
     }
@@ -104,15 +110,57 @@
   }
 
   img {
+    margin-bottom: 1.2rem;
     width: grid-width(12); height: 40vw;
     object-fit: cover;
-    @include breakpoint(md) { width: grid-width(6); height: 28vw; }
+    @include breakpoint(md) {
+      margin-bottom: 0;
+      margin-right: 3.2rem;
+      width: grid-width(6); height: 28vw;
+    }
     @include breakpoint(lg) { height: 24vw; }
+  }
+
+  .meta, .location, .url  {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(md) { font-size: 1.9vw; line-height: 1.2; }
   }
 
   .info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .meta {
+    margin-bottom: 2rem;
+    @include breakpoint(md) { margin-bottom: 0; }
+    div:first-of-type {
+      letter-spacing: .8px;
+      text-stroke: 1px var(--onion);
+      -webkit-text-stroke: 1px var(--onion);
+      @include breakpoint(md) { font-size: 2.1vw; }
+    }
+    div:last-of-type { opacity: .56; font-style: italic; }
+  }
+
+  .location, .url {
+    opacity: .56;
+    font-style: italic;
+  }
+
+  .location {
+    margin: 0 0 2rem;
+    @include breakpoint(mdl) { margin-top: -6.4rem; margin: -6.4rem 0 0; }
+  }
+
+  .url { font-style: normal; width: max-content; }
+
+  @media(pointer: fine) {
+    .url:hover {
+      opacity: 1;
+    }
   }
 
   .empty {
@@ -168,12 +216,13 @@
     computed: {
       filteredProvisions() {
         return this.provisions.filter(provision => {
-          const type = provision.type.toString().toLowerCase();
-          const name = provision.name.toLowerCase();
-          const searchTerm = this.filter.toLowerCase();
+          const type = provision.type.toString().toLowerCase()
+          const name = provision.name.toLowerCase()
+          const neighborhood = provision.neighborhood.toLowerCase()
+          const searchTerm = this.filter.toLowerCase()
 
           return (
-            name.includes(searchTerm) || type.includes(searchTerm)
+            name.includes(searchTerm) || type.includes(searchTerm) || neighborhood.includes(searchTerm)
           );
         });
       }
