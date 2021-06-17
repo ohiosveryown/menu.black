@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="enter">
     <about/>
     <main>
       <headline/>
@@ -13,10 +13,13 @@
 
 <style lang="scss" scoped>
   @import '../style/grid.scss';
-  .move {
-    transform: translateX(30px);
-    transition: all 300ms ease;
+
+  @keyframes enter {
+    0% { opacity: 0; transform: translateY(4rem); }
+    100%   { opacity: 1; transform: translateY(0) }
   }
+
+  .enter { opacity: 0; animation: enter 1s ease 500ms forwards; }
 </style>
 
 
