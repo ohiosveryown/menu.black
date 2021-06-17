@@ -1,7 +1,7 @@
 {
-  "name": "menu.black-2020",
-  "version": "1.0.0",
-  "description": "A collection of black owned restuarants in Atlanta",
+  "name": "menu.black",
+  "version": "2.0.0",
+  "description": "Menu dot Black is a growing collection of black owned restaurants and food spots in the Atlanta area, curated for your      consumption.",
   "author": "Matthew Pence",
   "private": true,
   "scripts": {

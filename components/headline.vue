@@ -14,7 +14,7 @@
       <span class="row-two">
         <span class="version">
           <a target="_blank"
-            href="https://github.com/ohiosveryown/menu.black">v.2.0
+            href="https://github.com/ohiosveryown/menu.black">v2.0
           </a>
         </span>
         <span class="black">bĿack</span>
