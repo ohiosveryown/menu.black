@@ -137,13 +137,11 @@
 <script>
   import { provisions } from '../static/provisions'
   export default {
-    data() {
-      return {
-        provisions,
-        provision: null,
-        shuffledProvisions: null
-      }
-    },
+    data: () => ({
+      provisions,
+      provision: null,
+      shuffledProvisions: null
+    }),
     methods: {
       randoProv : function(e) {
         this.provision = this.provisions[~~(Math.random() * this.provisions.length)]

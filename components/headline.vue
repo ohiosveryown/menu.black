@@ -81,12 +81,10 @@
 
 <script>
   export default {
-    data() {
-      return {
-        emojis: ['🥒', '🌶', '🫑', '🍕', '🍩', '🍔', '🌯', '🥦', '🧇', '🍟', '🥞', '🍳', '🍋', '🫒', '🥑', '🥝'],
-        emoji: ''
-      }
-    },
+    data: () => ({
+      emojis: ['🥒', '🌶', '🫑', '🍕', '🍩', '🍔', '🌯', '🥦', '🧇', '🍟', '🥞', '🍳', '🍋', '🫒', '🥑', '🥝'],
+      emoji: ''
+    }),
     methods: {
       randoEmoji : function(e) {
         this.emoji = this.emojis[~~(Math.random() * this.emojis.length)]

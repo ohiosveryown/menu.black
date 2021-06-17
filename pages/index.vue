@@ -32,12 +32,8 @@
 
   export default {
     components: { about, headline, subhead, discover, search },
-
-    head() {
-        return {
-          title: 'Menu Dot Black – ✊🏼✊🏽✊🏿'
-        }
-    },
-
+    head: () => ({
+      title: 'Menu dot Black'
+    })
   }
 </script>

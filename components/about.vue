@@ -32,6 +32,48 @@
 <style lang="scss" scoped>
   @import '../style/grid.scss';
 
+  .opened {
+    pointer-events: inherit;
+    opacity: 1;
+  }
+
+  .closed {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  nav { margin-top: 4rem; }
+
+  header {
+    position: relative;
+    margin: 0 auto;
+    width: max-content;
+    cursor: pointer;
+    opacity: .48;
+    transition: opacity 300ms ease;
+    &:hover { opacity: 1; }
+  }
+
+  section {
+    position: absolute;
+    top: 5.6rem;
+    z-index: var(--zmax);
+    border: 1px solid var(--onion);
+    padding: 2.4rem;
+    background: var(--gravity);
+    box-shadow: 12px 12px 0 var(--cucumber);
+    @include breakpoint(md) { padding: 6.4rem }
+  }
+
+  p {
+    font-size: 5.2vw;
+    line-height: 1.28;
+    @include breakpoint(md)  { font-size: 4vw; line-height: 1.15; }
+    @include breakpoint(mdl) { font-size: 3.2vw; }
+  }
+
+  p + p { text-indent: 5ch; }
+
   .matt, .contact {
     position: relative;
     border-radius: 50%;
@@ -61,56 +103,13 @@
     @include breakpoint(md)  { filter: blur(24px); }
   }
 
-  .opened {
-    pointer-events: inherit;
-    opacity: 1;
-  }
-
-  .closed {
-    pointer-events: none;
-    opacity: 0;
-  }
-
-  nav { margin-top: 4rem; }
-
-  header {
-    position: relative;
-    cursor: pointer;
-    opacity: .48;
-    transition: opacity 300ms ease;
-    &:hover { opacity: 1; }
-  }
-
-  section {
-    position: absolute;
-    top: 5.6rem;
-    z-index: var(--zmax);
-    border: 1px solid var(--onion);
-    padding: 2.4rem;
-    background: var(--gravity);
-    box-shadow: 12px 12px 0 var(--cucumber);
-    @include breakpoint(md) { padding: 6.4rem }
-  }
-
-  p {
-    font-size: 5.2vw;
-    line-height: 1.28;
-    @include breakpoint(md)  { font-size: 4vw; line-height: 1.15; }
-    @include breakpoint(mdl) { font-size: 3.2vw; }
-  }
-
-  p + p {
-    text-indent: 5ch;
-  }
 </style>
 
 
 <script>
   export default {
-    data() {
-      return {
-        isOpen: false,
-      }
-    }
+    data: () => ({
+      isOpen: false,
+    })
   }
 </script>
