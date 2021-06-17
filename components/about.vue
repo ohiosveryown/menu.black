@@ -37,7 +37,7 @@
     border-radius: 50%;
     width: 100%; height: 100%;
     cursor: pointer;
-    &:before { content: 'Matt.'; }
+    &:before { content: 'Matt ↗'; }
   }
 
   .contact:before { content: 'contact here ↗'; }
