@@ -3,7 +3,7 @@
     <h3 class="title width uc">Feeling adventurous? Random ¨
       spots are shown below.
       <span @click="shuffle" class="refresh">
-        <span class="refresh--bg"></span>
+        <span class="refresh--bg"/>
       </span>
       → the list for more offerings ↙
     </h3>
