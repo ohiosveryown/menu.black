@@ -1,8 +1,8 @@
 <template>
-  <section class="width">
+  <section class="width row-three">
     <h2 class="title uc taj">
       Is a
-      <span class="power">✊🏼✊🏽✊🏾✊🏿</span>
+      <span class="power">✊🏿✊🏾✊🏽✊🏼</span>
       growing
       <span class="collection">
         collection
@@ -34,10 +34,30 @@
   @import '../style/grid.scss';
 
   section {
+    position: relative;
     margin-bottom: 5.6rem;
     @include breakpoint(md) { margin-bottom: 14rem; }
     @include breakpoint(mdl) { margin-bottom: 8rem; }
   }
+
+  @keyframes enter {
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(0); }
+  }
+
+  .row-three:after {
+    @include breakpoint(mdl) {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 104%;
+      background: var(--gravity);
+      transform-origin: right;
+      overflow: hidden;
+    }
+  }
+
+  .row-three:after { animation: enter 1s var(--inout) 800ms forwards; }
 
   h2 {
     color: var(--cucumber);

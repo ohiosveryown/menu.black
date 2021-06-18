@@ -1,5 +1,5 @@
 <template>
-  <nav class="width title uc">
+  <nav class="width uc title">
     <header
       class="tac"
       tabindex="0"
@@ -42,7 +42,10 @@
     opacity: 0;
   }
 
-  nav { margin-top: 4rem; }
+  nav {
+    margin-top: 4rem;
+    // @include breakpoint(md) { text-transform: uppercase }
+  }
 
   header {
     position: relative;

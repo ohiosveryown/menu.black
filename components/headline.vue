@@ -27,8 +27,15 @@
 <style lang="scss" scoped>
   @import '../style/grid.scss';
 
+  @keyframes enter {
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(0); }
+  }
+
+  .enter { opacity: 0; animation: enter 1s ease 500ms forwards; }
+
   header {
-    margin: 3.2rem auto 7.2rem;
+    margin: 3.2rem auto 4rem;
     @include breakpoint(md) { margin: 8.4rem auto 14rem; }
     @include breakpoint(mdl) { margin: 8.4rem auto 10rem; }
   }
@@ -40,10 +47,26 @@
     // @include breakpoint(lg) { font-size: 19.2rem; }
   }
 
+  .row-one:after, .row-two:after {
+    @include breakpoint(mdl) {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 104%;
+      background: var(--gravity);
+      transform-origin: right;
+      overflow: hidden;
+    }
+  }
+
+  .row-one:after { animation: enter 1s var(--inout) 500ms forwards; }
+  .row-two:after { animation: enter 1s var(--inout) 650ms forwards; }
+
   .row-one {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   .emoji {
@@ -65,6 +88,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
   }
 
   .version {

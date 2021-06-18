@@ -15,8 +15,8 @@
   @import '../style/grid.scss';
 
   @keyframes enter {
-    0% { opacity: 0; transform: translateY(4rem); }
-    100%   { opacity: 1; transform: translateY(0) }
+    from { opacity: 0; transform: translateY(4rem); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 
   .enter { opacity: 0; animation: enter 1s ease 500ms forwards; }
@@ -33,7 +33,7 @@
   export default {
     components: { about, headline, subhead, discover, search },
     head: () => ({
-      title: 'Menu dot Black'
+      title: 'Menu [dot] Black'
     })
   }
 </script>
