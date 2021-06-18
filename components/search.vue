@@ -214,12 +214,13 @@
           const type = provision.type.toString().toLowerCase()
           const name = provision.name.toLowerCase()
           const neighborhood = provision.neighborhood.toLowerCase()
+          const address = provision.address.toLowerCase()
           const searchTerm = this.filter.toLowerCase()
 
           return (
-            name.includes(searchTerm) || type.includes(searchTerm) || neighborhood.includes(searchTerm)
-          );
-        });
+            name.includes(searchTerm) || type.includes(searchTerm) || neighborhood.includes(searchTerm) || address.includes(searchTerm)
+          )
+        })
       }
     }
   }
