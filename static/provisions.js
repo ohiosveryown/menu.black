@@ -206,4 +206,22 @@ export const  provisions = [
     link: 'menu/order',
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/FzWqbbD73ZAQPZ379nM4zA/o.jpg',
   },
+  {
+    name: "Breakfast at Barney's",
+    type: 'Breakfast, Brunch',
+    neighborhood: 'Eastside',
+    address: '349 Decatur St SE Atlanta, GA 30312',
+    url: 'http://www.breakfastatbarneys.com',
+    link: 'menu/order',
+    image: 'https://s3-media0.fl.yelpcdn.com/bphoto/5CeWF6iqxL10rg_U4JCrkQ/o.jpg',
+  },
+  {
+    name: "Hattie B's",
+    type: 'Southern',
+    neighborhood: 'Eastside',
+    address: '299 Moreland Ave NE Atlanta, GA 30307',
+    url: 'http://hattieb.com/',
+    link: 'menu/order',
+    image: 'https://s3-media0.fl.yelpcdn.com/bphoto/AtekL3QdmLS5ClYJ3TUIgA/o.jpg',
+  },
 ]
