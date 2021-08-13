@@ -1,4 +1,4 @@
-export const  provisions = [
+export const provisions = [
   {
     name: "Roots PBC",
     type: 'Vegan',
