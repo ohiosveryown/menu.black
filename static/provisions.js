@@ -2,7 +2,7 @@ export const provisions = [
   {
     name: "Roots PBC",
     type: 'Vegan',
-    neighborhood: 'Westside',
+    neighborhood: 'Sylvan Hills',
     address: '2051 Metropolitan Pkwy',
     url: 'https://rootspbc.com/our-menu/',
     link: 'menu/order',
@@ -11,7 +11,7 @@ export const provisions = [
   {
     name: "Desta",
     type: 'Ethiopian',
-    neighborhood: 'Eastside',
+    neighborhood: 'Briarcliff Woods',
     address: '3086 Briarcliff Rd NE',
     url: 'https://destaethiopiankitchen.com/atlanta-druid-hills-desta-ethiopian-kitchen-food-menu',
     link: 'menu/order',
@@ -20,7 +20,7 @@ export const provisions = [
   {
     name: "Tassili's",
     type: 'Vegan',
-    neighborhood: 'Westside',
+    neighborhood: 'Grant Park',
     address: '404 Atlanta Ave',
     url: 'https://www.tassilisrawreality.com/menu',
     link: 'menu/order',
@@ -29,7 +29,7 @@ export const provisions = [
   {
     name: "Le Petit Marche",
     type: 'Breakfast, Sandwiches',
-    neighborhood: 'Eastside',
+    neighborhood: 'Kirkwood',
     address: '1984 Hosea L. Williams Dr. Ste. A',
     url: 'https://www.lepetitmarche.net/menu',
     link: 'menu/order',
@@ -38,7 +38,7 @@ export const provisions = [
   {
     name: "Ann's Snack Bar",
     type: 'Sandwiches',
-    neighborhood: 'Eastside',
+    neighborhood: 'Kirkwood',
     address: '1615 Memorial Dr SE',
     url: 'http://places.singleplatform.com/annie-price-restaurant/menu',
     link: 'menu/order',
@@ -47,7 +47,7 @@ export const provisions = [
   {
     name: "Wats Crackin",
     type: 'Seafood',
-    neighborhood: 'Eastside',
+    neighborhood: 'East Lake',
     address: '368 Candler Rd SE',
     url: 'http://places.singleplatform.com/wats-crackin-garlic-crab/menu',
     link: 'menu/order',
@@ -56,7 +56,7 @@ export const provisions = [
   {
     name: "Hot Dog Factory",
     type: 'Hot Dogs',
-    neighborhood: 'Midtown',
+    neighborhood: 'Downtown',
     address: '75 Piedmont Ave NE #150',
     url: 'https://www.theoriginalhotdogfactory.com',
     link: 'menu/order',
@@ -65,7 +65,7 @@ export const provisions = [
   {
     name: "Atlanta Breakfast Club",
     type: 'Breakfast',
-    neighborhood: 'Midtown',
+    neighborhood: 'Downtown',
     address: '249 Ivan Allen Jr Blvd NW',
     url: 'https://atlantabreakfastclub.ordersnapp.com/home',
     link: 'menu/order',
@@ -74,7 +74,7 @@ export const provisions = [
   {
     name: "Old Lady Gang",
     type: 'Southern',
-    neighborhood: 'Downtown',
+    neighborhood: 'Castleberry Hill',
     address: '177 Peters St SW',
     url: 'http://oldladygang.com/menu',
     link: 'menu/order',
@@ -83,7 +83,7 @@ export const provisions = [
   {
     name: "Slim & Husky's Pizza",
     type: 'Pizza',
-    neighborhood: 'Downtown',
+    neighborhood: 'Adair Park',
     address: '581 Metropolitan Pkwy SW',
     url: 'https://slimandhuskys.com/menus',
     link: 'menu/order',
@@ -92,7 +92,7 @@ export const provisions = [
   {
     name: "Sublime Doughnuts",
     type: 'Donuts',
-    neighborhood: 'Eastside',
+    neighborhood: 'Brookhaven',
     address: '2566 Briarcliff Rd NE, Atlanta',
     url: 'http://www.urbangrindatlanta.com/menu.html',
     link: 'menu/order',
@@ -101,7 +101,7 @@ export const provisions = [
   {
     name: "Urban Grind",
     type: 'Coffee & Tea',
-    neighborhood: 'Westside',
+    neighborhood: 'Marietta Street Artery',
     address: '962 Marietta St NW',
     url: 'http://www.urbangrindatlanta.com/menu.html',
     link: 'menu/order',
@@ -110,7 +110,7 @@ export const provisions = [
   {
     name: "Zun Zún",
     type: 'Latin, Sandwiches',
-    neighborhood: 'Eastside',
+    neighborhood: 'East Atlanta',
     address: '479 Flat Shoals Ave SE',
     url: 'https://zunzunatl.com/menu',
     link: 'menu/order',
@@ -119,7 +119,7 @@ export const provisions = [
   {
     name: "Pit Boss BBQ",
     type: 'BBQ',
-    neighborhood: 'Southside',
+    neighborhood: 'Hapeville',
     address: '856 Virginia Ave',
     url: 'http://places.singleplatform.com/pit-boss-bbq/menu',
     link: 'menu/order',
@@ -128,7 +128,7 @@ export const provisions = [
   {
     name: "Community Grounds",
     type: 'Coffee & Tea',
-    neighborhood: 'Southside',
+    neighborhood: 'South Atlanta',
     address: '1297 McDonough Blvd SE',
     url: 'https://communitygrounds.com',
     link: 'menu/order',
@@ -137,7 +137,7 @@ export const provisions = [
   {
     name: "Soul Vegetarian",
     type: 'Vegan',
-    neighborhood: 'Southside',
+    neighborhood: 'West End',
     address: '879 Ralph David Abernathy Blvd SW',
     url: 'https://soulvegsouth.com/menu',
     link: 'menu/order',
@@ -146,7 +146,7 @@ export const provisions = [
   {
     name: "Plant Based Pizzeria",
     type: 'Pizza',
-    neighborhood: 'Eastside',
+    neighborhood: 'Virginia Highland',
     address: '730 Barnett St NE',
     url: 'https://www.plantbasedpizzeria.net/our-menu',
     link: 'menu/order',
@@ -155,7 +155,7 @@ export const provisions = [
   {
     name: "Slutty Vegan",
     type: 'Vegan',
-    neighborhood: 'Westside',
+    neighborhood: 'Westview',
     address: '1542 Ralph David Abernathy Blvd SW',
     url: 'http://sluttyveganatl.com/',
     link: 'menu/order',
@@ -164,7 +164,7 @@ export const provisions = [
   {
     name: "Supreme Burger",
     type: 'Vegan',
-    neighborhood: 'Eastside',
+    neighborhood: 'Candler-McAfee',
     address: '1827 Columbia Dr Suite A',
     url: 'https://www.grubhub.com/restaurant/supreme-burger-columbia-dr-1827-columbia-dr-decatur/881397',
     link: 'menu/order',
@@ -173,8 +173,8 @@ export const provisions = [
   {
     name: "Fresh From Earth",
     type: 'Coffee & Tea',
-    neighborhood: 'Southside',
-    address: '3727 Main St, College Park',
+    neighborhood: 'College Park',
+    address: '3727 Main St',
     url: 'http://freshfromearth.us/',
     link: 'menu/order',
     image: 'https://s3-media0.fl.yelpcdn.com/bphoto/3EFL3bAiYVR9RKuNs7Q6XA/o.jpg',
@@ -182,7 +182,7 @@ export const provisions = [
   {
     name: "Spice House",
     type: 'Caribbean, Sea Food',
-    neighborhood: 'Southside',
+    neighborhood: 'Cascade Road',
     address: '2247 Cascade Rd SW',
     url: 'http://spicehouseatl.com',
     link: 'menu/order',
@@ -191,7 +191,7 @@ export const provisions = [
   {
     name: "The Sleepy Potato",
     type: 'Southern, Wings',
-    neighborhood: 'Southside',
+    neighborhood: 'Perkerson',
     address: '757 Cleveland Ave SW',
     url: 'http://spicehouseatl.com',
     link: 'menu/order',
@@ -200,7 +200,7 @@ export const provisions = [
   {
     name: "Just Add Honey",
     type: 'Coffee & Tea',
-    neighborhood: 'Eastside',
+    neighborhood: 'Old Fourth Ward',
     address: '684 John Wesley Dobbs Ave NE',
     url: 'http://justaddhoney.net',
     link: 'menu/order',
@@ -209,7 +209,7 @@ export const provisions = [
   {
     name: "Breakfast at Barney's",
     type: 'Breakfast, Brunch',
-    neighborhood: 'Eastside',
+    neighborhood: 'Sweet Auburn',
     address: '349 Decatur St SE Atlanta, GA 30312',
     url: 'http://www.breakfastatbarneys.com',
     link: 'menu/order',
@@ -218,7 +218,7 @@ export const provisions = [
   {
     name: "Hattie B's",
     type: 'Southern',
-    neighborhood: 'Eastside',
+    neighborhood: 'Candler Park',
     address: '299 Moreland Ave NE Atlanta, GA 30307',
     url: 'http://hattieb.com/',
     link: 'menu/order',
