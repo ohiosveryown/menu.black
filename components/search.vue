@@ -130,6 +130,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    @include breakpoint(md) {
+      width: grid-width(6);
+    }
   }
 
   .meta {
