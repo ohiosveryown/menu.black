@@ -11,7 +11,7 @@
         type="text"
         id="search" name="search"
         class="title uc"
-        placeholder="by location (Eastside) or Food Type (Pizza)"
+        placeholder="by location (Downtown) or Food Type (Pizza)"
         v-model="filter"
       />
     </div>
