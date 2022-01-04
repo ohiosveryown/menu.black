@@ -11,7 +11,7 @@
         type="text"
         id="search" name="search"
         class="title uc"
-        placeholder="by location (Eastside) or Food Type (Pizza)"
+        placeholder="by location (Downtown) or Food Type (Pizza)"
         v-model="filter"
       />
     </div>
@@ -130,6 +130,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    @include breakpoint(md) {
+      width: grid-width(6);
+    }
   }
 
   .meta {
