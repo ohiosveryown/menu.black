@@ -1,7 +1,7 @@
 {
   "name": "menu.black",
   "version": "2.0.0",
-  "description": "Menu dot Black is a growing collection of black owned restaurants and food spots in the Atlanta area, curated for your      consumption.",
+  "description": "Menu dot Black is a growing collection of black owned restaurants and food spots in the Atlanta area, curated for your consumption.",
   "author": "Matthew Pence",
   "private": true,
   "scripts": {
@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.0",
     "nuxt": "^2.0.0",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^10.2.0"
   },
   "devDependencies": {}
 }
