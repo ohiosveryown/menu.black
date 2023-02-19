@@ -172,7 +172,7 @@ export const provisions = [
   },
   {
     name: "Belinda's Southern Cuisine",
-    type: 'Soul Food, BBQ',
+    type: 'Soul Food, Barbecue (BBQ)',
     neighborhood: 'Stonecrest',
     address: '7322 Stonecrest Concourse Stonecrest, GA 30038',
     url: 'https://belindassoutherncuisine.com',
@@ -289,7 +289,7 @@ export const provisions = [
   },
   {
     name: "Mr. Pig's Smokehouse",
-    type: 'Barbecue',
+    type: 'Barbecue (BBQ)',
     neighborhood: 'Grove Park',
     address: '1992 Donald Lee Hollowell Pkwy NW, Atlanta, GA 30318',
     url: 'https://www.mrpigsmokehouse.com/',
@@ -307,7 +307,7 @@ export const provisions = [
   },
   {
     name: "Daddy D'z BBQ Joynt",
-    type: 'Barbecue',
+    type: 'Barbecue (BBQ)',
     neighborhood: 'Oakland',
     address: '264 Memorial Dr SE #2139, Atlanta, GA 30312',
     url: 'http://www.daddydz.com/',
@@ -514,7 +514,7 @@ export const provisions = [
   },
   {
     name: "Pit Boss BBQ",
-    type: 'BBQ',
+    type: 'Barbecue (BBQ)',
     neighborhood: 'Hapeville',
     address: '800 Doug Davis Dr. Hapeville, GA 30354',
     url: 'http://places.singleplatform.com/pit-boss-bbq/menu',
