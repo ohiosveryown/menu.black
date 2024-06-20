@@ -5,7 +5,7 @@
         <span>Menu</span>
         <span
           @click="randoEmoji()"
-          class="emoji">
+          class="emoji plausible-event-name=Emoji+Click">
           {{ emoji }}
         </span>
         <span class="dot">Dot</span>
